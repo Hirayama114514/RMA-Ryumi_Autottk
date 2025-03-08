@@ -1,4 +1,4 @@
-# LMA-Ryumi_Autottk
+# RMA-Ryumi_Autottk
 
 船新的 炽焰天穹 代理作战助手。图像技术 + 模拟控制，解放双手！
 由 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 强力驱动！
@@ -25,8 +25,9 @@
 - 自动配队
 
 ## 使用说明
+> [!warning]
 
-- [新手上路](**使用前必看**)(**本模块正在编写**)(**由于作者非专业人士，难以提供有价值的信息，此部分暂时请参考[MaaFramework](https://github.com/MaaXYZ/MaaFramework) 中其他优秀实践**)
+- [新手上路](**使用前必看**)
 
 - [功能介绍](**正在编写**)
 
