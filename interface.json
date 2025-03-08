@@ -1,0 +1,81 @@
+{
+    "name":"LMA",
+    "version":"0.101",
+    "url":null,
+    "custom_title":"无法无天的瑠実",
+    "default_controller": "adb",
+    "lock_controller":true,
+    "controller":[
+        {
+            "name":"ADB 默认方式",
+            "type":"Adb"
+        }
+    ],
+    "resource": [
+        {
+            "name": "B 服",
+            "path": [
+                "{PROJECT_DIR}/Resource"
+            ]
+        }
+    ],
+    "task": [
+        {
+            "name": "启动游戏",
+            "entry": "登录_app启动"
+        },
+        {
+            "name":"挑战异时层",
+            "entry":"挑战异时层",
+            "option":[
+                "异时层强敌",
+                "练习模式"
+            ]
+        },
+        {
+            "name":"代理作战",
+            "entry":"进入战斗"
+        }
+    ],
+    "option": {
+        "异时层强敌":{
+            "cases":[
+                {
+                    "name":"究极覆地之手",
+                    "pipeline_override":{
+                        "选择异时层强敌":{
+                            "expected":"上篇Day12"
+                        }
+                    }
+                },
+                {
+                    "name":"沙漠鞭虫",
+                    "pipeline_override":{
+                        "选择异时层强敌":{
+                            "expected":"沙漠鞭虫"
+                        }
+                    }
+                },
+                {
+                    "name":"亡骨之翎",
+                    "pipeline_override":{
+                        "选择异时层强敌":{
+                            "expected":"亡骨之翎"
+                        }
+                    }
+                }
+            ]
+        },
+        "练习模式":{
+            "cases":[{
+                "name":"开启练习"
+            },
+            {
+                "name":"用票挑战"
+            }
+            ]
+        }
+
+
+    }
+}

@@ -1,0 +1,72 @@
+{
+    "挑战异时层": {
+        "next": [
+            "出击异时层强敌"
+        ],
+        "interrupt": [
+            "异时层勾选练习",
+            "挑战异时层强敌",
+            "选择异时层强敌",
+            "异时层选择界面向右",
+            "打开异时层",
+            "异时层打开强化/养成"
+        ]
+    },
+    "出击异时层强敌": {
+        "recognition": "TemplateMatch",
+        "template": "出击.png",
+        "threshold": 0.9,
+        "action": "Click",
+        "post_delay": 500
+    },
+    "挑战异时层强敌": {
+        "recognition": "TemplateMatch",
+        "template": "挑战.png",
+        "threshold": 0.9,
+        "action": "Click",
+        "post_delay": 500
+    },
+    "异时层勾选练习": {
+        "recognition": "TemplateMatch",
+        "template": "练习.png",
+        "threshold": 0.9,
+        "action": "Click",
+        "post_delay": 500
+    },
+    "选择异时层强敌": {
+        "recognition": "OCR",
+        "expected": "上篇Day12",
+        "action": "Click",
+        "post_delay": 500
+    },
+    "异时层选择界面向右": {
+        "recognition": "OCR",
+        "expected": "高级奖章兑换所",
+        "post_delay":1000,
+        "action": "Swipe",
+        "begin": [
+            1000,
+            300,
+            1,
+            1
+        ],
+        "end": [
+            700,
+            300,
+            1,
+            1
+        ]
+    },
+    "打开异时层": {
+        "recognition": "OCR",
+        "expected": "异时层",
+        "action": "Click",
+        "post_delay": 500
+    },
+    "异时层打开强化/养成": {
+        "recognition": "OCR",
+        "expected": "强化/养成",
+        "action": "Click",
+        "post_delay": 500
+    }
+}
