@@ -1,0 +1,27 @@
+{
+    "选择六宇亚":{
+        "recognition":"TemplateMatch",
+        "template":["角色头像/六宇亚.png","角色头像/六宇亚2.png"],
+        "roi":[0,500,1100,200],
+        "threshold":0.9,
+        "action":"Click",
+        "post_delay":500
+    },
+    "选择六宇亚b":{
+        "recognition":"FeatureMatch",
+        "template":[
+            "角色头像/六宇亚b.png",
+            "角色头像/六宇亚b2.png",
+            "角色头像/六宇亚b3.png",
+            "角色头像/六宇亚b4.png",
+            "角色头像/六宇亚b5.png",
+            "角色头像/六宇亚b7.png",
+            "角色头像/六宇亚b8.png",
+            "角色头像/六宇亚b9.png",
+            "角色头像/六宇亚b10.png"
+            ],
+        "roi":[0,500,1100,200],
+        "action":"Click",
+        "post_delay":500
+    }
+}

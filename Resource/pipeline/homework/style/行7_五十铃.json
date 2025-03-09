@@ -1,0 +1,27 @@
+{
+    "选择五十铃":{
+        "recognition":"TemplateMatch",
+        "template":["角色头像/五十铃.png","角色头像/五十铃2.png"],
+        "roi":[0,500,1100,200],
+        "threshold":0.9,
+        "action":"Click",
+        "post_delay":500
+    },
+    "选择五十铃b":{
+        "recognition":"FeatureMatch",
+        "template":[
+            "角色头像/五十铃b.png",
+            "角色头像/五十铃b2.png",
+            "角色头像/五十铃b3.png",
+            "角色头像/五十铃b4.png",
+            "角色头像/五十铃b5.png",
+            "角色头像/五十铃b7.png",
+            "角色头像/五十铃b8.png",
+            "角色头像/五十铃b9.png",
+            "角色头像/五十铃b10.png"
+            ],
+        "roi":[0,500,1100,200],
+        "action":"Click",
+        "post_delay":500
+    }
+}

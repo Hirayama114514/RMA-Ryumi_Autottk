@@ -1,0 +1,27 @@
+{
+    "选择火苍井":{
+        "recognition":"TemplateMatch",
+        "template":["角色头像/火苍井.png","角色头像/火苍井2.png"],
+        "roi":[0,500,1100,200],
+        "threshold":0.9,
+        "action":"Click",
+        "post_delay":500
+    },
+    "选择火苍井b":{
+        "recognition":"FeatureMatch",
+        "template":[
+            "角色头像/火苍井b.png",
+            "角色头像/火苍井b2.png",
+            "角色头像/火苍井b3.png",
+            "角色头像/火苍井b4.png",
+            "角色头像/火苍井b5.png",
+            "角色头像/火苍井b7.png",
+            "角色头像/火苍井b8.png",
+            "角色头像/火苍井b9.png",
+            "角色头像/火苍井b10.png"
+            ],
+        "roi":[0,500,1100,200],
+        "action":"Click",
+        "post_delay":500
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "选择雷夏洛":{
+        "recognition":"TemplateMatch",
+        "template":["角色头像/雷夏洛.png","角色头像/雷夏洛2.png"],
+        "roi":[0,500,1100,200],
+        "threshold":0.9,
+        "action":"Click",
+        "post_delay":500
+    },
+    "选择雷夏洛b":{
+        "recognition":"FeatureMatch",
+        "template":[
+            "角色头像/雷夏洛b.png",
+            "角色头像/雷夏洛b2.png",
+            "角色头像/雷夏洛b3.png",
+            "角色头像/雷夏洛b4.png",
+            "角色头像/雷夏洛b5.png",
+            "角色头像/雷夏洛b7.png",
+            "角色头像/雷夏洛b8.png",
+            "角色头像/雷夏洛b9.png",
+            "角色头像/雷夏洛b10.png"
+            ],
+        "roi":[0,500,1100,200],
+        "action":"Click",
+        "post_delay":500
+    }
+}

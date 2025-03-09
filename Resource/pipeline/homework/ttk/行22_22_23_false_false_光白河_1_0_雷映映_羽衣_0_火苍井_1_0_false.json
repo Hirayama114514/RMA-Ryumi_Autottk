@@ -1,0 +1,288 @@
+{
+    "22轮进入回合":{
+        "rate_limit":0,
+        "next":["22轮前置od"],
+        "interrupt":[
+            "22切换队伍",
+            "跳过人生",
+            "等待加载",
+            "战败检测_异时层",
+            "战败检测_亡骨之翎",
+            "战败检测_高分挑战",
+            "战败检测_钟楼",
+            "战败检测_恒星战"
+        ]
+    },
+    "22切换队伍":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            0,
+            0,
+            120,
+            120
+        ],
+        "template": "异时层_切换队伍.png",
+        "enable":false
+    },
+    "22轮前置od":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":[
+            "22轮前置od不开启",
+            "22轮前置od已开启"
+            ],
+        "interrupt":[
+            "开启od"
+        ]
+    },
+    "22轮前置od不开启":{
+        "inverse":false,
+        "pre_delay":0,
+        "post_delay":0,
+        "next":["22轮1号角色落位检查"]
+    },
+    "22轮前置od已开启":{
+        "recognition":"TemplateMatch",
+        "roi":[1120,0,120,120],
+        "template":["0od.png"],
+        "pre_delay":0,
+        "post_delay":0,
+        "next":["22轮1号角色落位检查"]
+    },
+    "22轮1号角色落位检查":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "timeout":300000,
+        "next":["22轮1号角色落位检查无误","22轮1号角色落位检查无误b"],
+        "interrupt":[
+            "交换1",
+            "选择光白河",
+            "选择光白河b"
+        ]
+    },
+    "22轮1号角色落位检查无误":{
+        "recognition":"TemplateMatch",
+        "template":["角色头像/光白河.png"],
+        "roi":[20,500,180,180],
+        "pre_delay":0,
+        "post_delay":0,
+        "next":["22轮2号角色落位检查"]
+    },
+    "22轮1号角色落位检查无误b":{
+        "recognition":"FeatureMatch",
+        "template":["角色头像/光白河b.png"],
+        "roi":[20,500,180,180],
+        "pre_delay":0,
+        "post_delay":0,
+        "next":["22轮2号角色落位检查"]
+    },
+    "22轮2号角色落位检查":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "timeout":300000,
+        "next":["22轮2号角色落位检查无误","22轮2号角色落位检查无误b"],
+        "interrupt":[
+            "交换2",
+            "选择雷映映",
+            "选择雷映映b"
+        ]
+    },
+    "22轮2号角色落位检查无误":{
+        "recognition":"TemplateMatch",
+        "template":["角色头像/雷映映.png"],
+        "roi":[210,500,180,180],
+        "pre_delay":0,
+        "post_delay":0,
+        "next":["22轮3号角色落位检查"]
+    },
+    "22轮2号角色落位检查无误b":{
+        "recognition":"FeatureMatch",
+        "template":["角色头像/雷映映b.png"],
+        "roi":[210,500,180,180],
+        "pre_delay":0,
+        "post_delay":0,
+        "next":["22轮3号角色落位检查"]
+    },
+    "22轮3号角色落位检查":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "timeout":300000,
+        "next":["22轮3号角色落位检查无误","22轮3号角色落位检查无误b"],
+        "interrupt":[
+            "交换3",
+            "选择火苍井",
+            "选择火苍井b"
+        ]
+    },
+    "22轮3号角色落位检查无误":{
+        "recognition":"TemplateMatch",
+        "template":["角色头像/火苍井.png"],
+        "roi":[400,500,180,180],
+        "pre_delay":0,
+        "post_delay":0,
+        "next":["22轮1号角色技能检查"]
+    },
+    "22轮3号角色落位检查无误b":{
+        "recognition":"TemplateMatch",
+        "template":["角色头像/火苍井b.png"],
+        "roi":[400,500,180,180],
+        "pre_delay":0,
+        "post_delay":0,
+        "next":["22轮1号角色技能检查"]
+    },
+    "22轮1号角色技能检查":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "action":"Click",
+        "target":[215,30,75,15],
+        "post_delay":500,
+        "next":[
+            "22轮1号角色技能检查无误1"
+        ],
+        "interrupt":[
+            "寻找10",
+            "选择1"
+    ]
+    },
+    "22轮1号角色技能检查无误1":{
+        "recognition":"OCR",
+        "expected":["NORMAL","FULL","自动","配置","ON"],
+        "roi":[270,0,300,130],
+        "inverse":true,
+        "next":["22轮2号角色技能检查"]
+    },
+    "22轮2号角色技能检查":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "action":"Click",
+        "target":[215,30,75,15],
+        "post_delay":500,
+        "next":[
+            "22轮2号角色技能检查无误1"
+        ],
+        "interrupt":[
+            "寻找羽衣0",
+            "选择2"
+    ]
+    },
+    "22轮2号角色技能检查无误1":{
+        "recognition":"OCR",
+        "expected":["NORMAL","FULL","自动","配置","ON"],
+        "roi":[270,0,300,130],
+        "inverse":true,
+        "next":["22轮3号角色技能检查"]
+    },
+    "22轮3号角色技能检查":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "action":"Click",
+        "target":[215,30,75,15],
+        "post_delay":500,
+        "next":[
+            "22轮3号角色技能检查无误1"
+        ],
+        "interrupt":[
+            "寻找10",
+            "选择3"
+    ]
+    },
+    "22轮3号角色技能检查无误1":{
+        "recognition":"OCR",
+        "expected":["NORMAL","FULL","自动","配置","ON"],
+        "roi":[270,0,300,130],
+        "inverse":true,
+        "next":["22轮行动开始"]
+    },
+    "22轮行动开始":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "action":"Click",
+        "next":["22轮后置od"]
+    },
+    "22轮后置od":{
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":[
+            "22轮后置od不开启",
+            "22轮后置od已开启"
+            ],
+        "interrupt":[
+            "开启od"
+        ]
+    },
+    "22轮后置od不开启":{
+        "inverse":false,
+        "pre_delay":0,
+        "post_delay":0,
+        "next":["23轮进入回合"]
+    },
+    "22轮后置od已开启":{
+        "recognition":"TemplateMatch",
+        "roi":[1120,0,120,120],
+        "template":["0od.png"],
+        "pre_delay":0,
+        "post_delay":0,
+        "next":["23轮进入回合"]
+    }
+}

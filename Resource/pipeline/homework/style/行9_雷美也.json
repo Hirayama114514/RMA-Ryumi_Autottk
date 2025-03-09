@@ -1,0 +1,27 @@
+{
+    "选择雷美也":{
+        "recognition":"TemplateMatch",
+        "template":["角色头像/雷美也.png","角色头像/雷美也2.png"],
+        "roi":[0,500,1100,200],
+        "threshold":0.9,
+        "action":"Click",
+        "post_delay":500
+    },
+    "选择雷美也b":{
+        "recognition":"FeatureMatch",
+        "template":[
+            "角色头像/雷美也b.png",
+            "角色头像/雷美也b2.png",
+            "角色头像/雷美也b3.png",
+            "角色头像/雷美也b4.png",
+            "角色头像/雷美也b5.png",
+            "角色头像/雷美也b7.png",
+            "角色头像/雷美也b8.png",
+            "角色头像/雷美也b9.png",
+            "角色头像/雷美也b10.png"
+            ],
+        "roi":[0,500,1100,200],
+        "action":"Click",
+        "post_delay":500
+    }
+}

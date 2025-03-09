@@ -9,15 +9,15 @@
     {
       "name": "挑战异时层",
       "entry": "挑战异时层",
-      "check": false,
+      "check": true,
       "option": [
         {
           "name": "异时层强敌",
-          "index": 0
+          "index": 8
         },
         {
           "name": "练习模式",
-          "index": 0
+          "index": 1
         },
         {
           "name": "使用票数",
