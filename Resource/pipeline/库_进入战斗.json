@@ -23,6 +23,10 @@
     "等待加载":{
         "post_delay":300
     },
+    "异时层切换队伍":{
+        "action":"Click",
+        "target":[750,530,50,50]
+    },
     "胜利轮进入回合":{
         "action":"StopTask"
     }

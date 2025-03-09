@@ -1,0 +1,187 @@
+[2025-03-10 04:23:08.354][INF] Loading configuration file...
+[2025-03-10 04:23:09.405][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-10 04:23:09.430][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-10 04:23:10.505][INF] 正在载入资源
+[2025-03-10 04:23:10.505][INF] Resource: C:\Users\86187\Desktop\RMA-Ryumi_Autottk\Resource
+[2025-03-10 04:23:10.506][INF] 开始执行任务: 更新资源
+[2025-03-10 04:23:10.622][INF] 任务完成: 更新资源
+[2025-03-10 04:23:10.622][INF] 开始执行任务: 更新软件
+[2025-03-10 04:23:10.873][INF] GPU acceleration: Auto
+[2025-03-10 04:23:10.874][INF] AdbPath: C:/leidian/LDPlayer9/adb.exe
+[2025-03-10 04:23:10.874][INF] AdbSerial: emulator-5554
+[2025-03-10 04:23:10.874][INF] ScreenCap: Default
+[2025-03-10 04:23:10.874][INF] Input: MinitouchAndAdbKey
+[2025-03-10 04:23:10.874][INF] Config: {"extras":{"ld":{"enable":true,"index":0,"path":"C:/leidian/LDPlayer9","pid":1248}}
+[2025-03-10 04:23:11.470][INF] 任务完成: 更新软件
+[2025-03-10 04:23:13.529][INF] 正在注册自定义识别器
+[2025-03-10 04:23:13.529][INF] 正在注册自定义行动
+[2025-03-10 04:25:00.821][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-10 04:25:00.824][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-10 04:25:00.901][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-10 04:25:01.003][INF] 正在载入资源
+[2025-03-10 04:25:01.003][INF] Resource: C:\Users\86187\Desktop\RMA-Ryumi_Autottk\Resource
+[2025-03-10 04:25:01.006][INF] 正在连接至模拟器......
+[2025-03-10 04:25:01.152][INF] GPU acceleration: Auto
+[2025-03-10 04:25:01.152][INF] AdbPath: C:/leidian/LDPlayer9/adb.exe
+[2025-03-10 04:25:01.152][INF] AdbSerial: emulator-5554
+[2025-03-10 04:25:01.152][INF] ScreenCap: Default
+[2025-03-10 04:25:01.152][INF] Input: MinitouchAndAdbKey
+[2025-03-10 04:25:01.152][INF] Config: {"extras":{"ld":{"enable":true,"index":0,"path":"C:/leidian/LDPlayer9","pid":1248}}
+[2025-03-10 04:25:06.422][INF] 正在注册自定义识别器
+[2025-03-10 04:25:06.422][INF] 正在注册自定义行动
+[2025-03-10 04:25:09.604][INF] 截图用时较长: 792ms(Default)
+[2025-03-10 05:07:32.030][INF] 正在停止......
+[2025-03-10 05:07:32.044][INF] 已放弃本次任务
+[2025-03-10 05:08:26.886][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-10 05:08:26.887][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-10 05:08:26.920][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-10 05:08:26.954][INF] 正在载入资源
+[2025-03-10 05:08:26.954][INF] Resource: C:\Users\86187\Desktop\RMA-Ryumi_Autottk\Resource
+[2025-03-10 05:08:26.955][INF] 正在连接至模拟器......
+[2025-03-10 05:08:27.071][INF] GPU acceleration: Auto
+[2025-03-10 05:08:27.071][INF] AdbPath: C:/leidian/LDPlayer9/adb.exe
+[2025-03-10 05:08:27.071][INF] AdbSerial: emulator-5554
+[2025-03-10 05:08:27.071][INF] ScreenCap: Default
+[2025-03-10 05:08:27.071][INF] Input: MinitouchAndAdbKey
+[2025-03-10 05:08:27.071][INF] Config: {"extras":{"ld":{"enable":true,"index":0,"path":"C:/leidian/LDPlayer9","pid":1248}}
+[2025-03-10 05:08:33.558][INF] 正在注册自定义识别器
+[2025-03-10 05:08:33.559][INF] 正在注册自定义行动
+[2025-03-10 05:08:36.492][INF] 截图用时较长: 731ms(Default)
+[2025-03-10 05:09:01.759][INF] 正在停止......
+[2025-03-10 05:09:01.781][INF] 已放弃本次任务
+[2025-03-10 05:10:24.021][INF] Loading configuration file...
+[2025-03-10 05:10:25.196][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-10 05:10:25.237][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-10 05:10:25.920][INF] 正在载入资源
+[2025-03-10 05:10:25.920][INF] Resource: C:\Users\86187\Desktop\RMA-Ryumi_Autottk\Resource
+[2025-03-10 05:10:25.922][INF] 开始执行任务: 更新资源
+[2025-03-10 05:10:25.987][INF] 任务完成: 更新资源
+[2025-03-10 05:10:25.987][INF] 开始执行任务: 更新软件
+[2025-03-10 05:10:26.294][INF] GPU acceleration: Auto
+[2025-03-10 05:10:26.295][INF] AdbPath: C:/leidian/LDPlayer9/adb.exe
+[2025-03-10 05:10:26.295][INF] AdbSerial: emulator-5554
+[2025-03-10 05:10:26.295][INF] ScreenCap: Default
+[2025-03-10 05:10:26.295][INF] Input: MinitouchAndAdbKey
+[2025-03-10 05:10:26.296][INF] Config: {"extras":{"ld":{"enable":true,"index":0,"path":"C:/leidian/LDPlayer9","pid":2104}}
+[2025-03-10 05:10:26.725][INF] 任务完成: 更新软件
+[2025-03-10 05:10:31.154][INF] 正在注册自定义识别器
+[2025-03-10 05:10:31.154][INF] 正在注册自定义行动
+[2025-03-10 05:10:47.903][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-10 05:10:47.904][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-10 05:10:47.981][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-10 05:10:48.093][INF] 正在载入资源
+[2025-03-10 05:10:48.094][INF] Resource: C:\Users\86187\Desktop\RMA-Ryumi_Autottk\Resource
+[2025-03-10 05:10:48.104][INF] 正在连接至模拟器......
+[2025-03-10 05:10:48.238][INF] GPU acceleration: Auto
+[2025-03-10 05:10:48.238][INF] AdbPath: C:/leidian/LDPlayer9/adb.exe
+[2025-03-10 05:10:48.238][INF] AdbSerial: emulator-5554
+[2025-03-10 05:10:48.238][INF] ScreenCap: Default
+[2025-03-10 05:10:48.238][INF] Input: MinitouchAndAdbKey
+[2025-03-10 05:10:48.238][INF] Config: {"extras":{"ld":{"enable":true,"index":0,"path":"C:/leidian/LDPlayer9","pid":2104}}
+[2025-03-10 05:10:54.466][INF] 正在注册自定义识别器
+[2025-03-10 05:10:54.467][INF] 正在注册自定义行动
+[2025-03-10 05:10:58.017][INF] ToScreencapErrorTip
+[2025-03-10 05:11:15.754][INF] 正在停止......
+[2025-03-10 05:11:15.793][INF] 已放弃本次任务
+[2025-03-10 05:11:21.873][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-10 05:11:21.873][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-10 05:11:21.914][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-10 05:11:21.958][INF] 正在载入资源
+[2025-03-10 05:11:21.958][INF] Resource: C:\Users\86187\Desktop\RMA-Ryumi_Autottk\Resource
+[2025-03-10 05:11:21.959][INF] 正在连接至模拟器......
+[2025-03-10 05:11:22.069][INF] GPU acceleration: Auto
+[2025-03-10 05:11:22.069][INF] AdbPath: C:/leidian/LDPlayer9/adb.exe
+[2025-03-10 05:11:22.069][INF] AdbSerial: emulator-5554
+[2025-03-10 05:11:22.069][INF] ScreenCap: Default
+[2025-03-10 05:11:22.069][INF] Input: MinitouchAndAdbKey
+[2025-03-10 05:11:22.069][INF] Config: {"extras":{"ld":{"enable":true,"index":0,"path":"C:/leidian/LDPlayer9","pid":2104}}
+[2025-03-10 05:11:28.585][INF] 正在注册自定义识别器
+[2025-03-10 05:11:28.585][INF] 正在注册自定义行动
+[2025-03-10 05:11:31.756][INF] 截图用时较长: 791ms(Default)
+[2025-03-10 05:11:42.860][INF] 正在停止......
+[2025-03-10 05:11:44.555][INF] 已放弃本次任务
+[2025-03-10 05:27:12.404][INF] Loading configuration file...
+[2025-03-10 05:27:13.835][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-10 05:27:13.869][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-10 05:27:15.163][INF] 正在载入资源
+[2025-03-10 05:27:15.164][INF] Resource: C:\Users\86187\Desktop\RMA-Ryumi_Autottk\Resource
+[2025-03-10 05:27:15.165][INF] 开始执行任务: 更新资源
+[2025-03-10 05:27:15.325][INF] 任务完成: 更新资源
+[2025-03-10 05:27:15.326][INF] 开始执行任务: 更新软件
+[2025-03-10 05:27:15.604][INF] GPU acceleration: Auto
+[2025-03-10 05:27:15.605][INF] AdbPath: C:/leidian/LDPlayer9/adb.exe
+[2025-03-10 05:27:15.605][INF] AdbSerial: emulator-5554
+[2025-03-10 05:27:15.605][INF] ScreenCap: Default
+[2025-03-10 05:27:15.605][INF] Input: MinitouchAndAdbKey
+[2025-03-10 05:27:15.605][INF] Config: {"extras":{"ld":{"enable":true,"index":0,"path":"C:/leidian/LDPlayer9","pid":2104}}
+[2025-03-10 05:27:16.043][INF] 任务完成: 更新软件
+[2025-03-10 05:27:22.457][INF] 正在注册自定义识别器
+[2025-03-10 05:27:22.457][INF] 正在注册自定义行动
+[2025-03-10 05:27:51.808][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-10 05:27:51.809][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-10 05:27:51.835][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-10 05:27:51.885][INF] 正在载入资源
+[2025-03-10 05:27:51.885][INF] Resource: C:\Users\86187\Desktop\RMA-Ryumi_Autottk\Resource
+[2025-03-10 05:27:51.892][INF] 正在连接至模拟器......
+[2025-03-10 05:27:52.005][INF] GPU acceleration: Auto
+[2025-03-10 05:27:52.005][INF] AdbPath: C:/leidian/LDPlayer9/adb.exe
+[2025-03-10 05:27:52.005][INF] AdbSerial: emulator-5554
+[2025-03-10 05:27:52.005][INF] ScreenCap: Default
+[2025-03-10 05:27:52.005][INF] Input: MinitouchAndAdbKey
+[2025-03-10 05:27:52.005][INF] Config: {"extras":{"ld":{"enable":true,"index":0,"path":"C:/leidian/LDPlayer9","pid":2104}}
+[2025-03-10 05:27:58.435][INF] 正在注册自定义识别器
+[2025-03-10 05:27:58.435][INF] 正在注册自定义行动
+[2025-03-10 05:28:01.759][INF] ToScreencapErrorTip
+[2025-03-10 05:28:28.457][INF] 正在停止......
+[2025-03-10 05:28:28.666][INF] 已放弃本次任务
+[2025-03-10 05:28:31.607][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-10 05:28:31.608][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-10 05:28:31.627][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-10 05:28:31.651][INF] 正在载入资源
+[2025-03-10 05:28:31.651][INF] Resource: C:\Users\86187\Desktop\RMA-Ryumi_Autottk\Resource
+[2025-03-10 05:28:31.653][INF] 正在连接至模拟器......
+[2025-03-10 05:28:31.762][INF] GPU acceleration: Auto
+[2025-03-10 05:28:31.762][INF] AdbPath: C:/leidian/LDPlayer9/adb.exe
+[2025-03-10 05:28:31.762][INF] AdbSerial: emulator-5554
+[2025-03-10 05:28:31.762][INF] ScreenCap: Default
+[2025-03-10 05:28:31.762][INF] Input: MinitouchAndAdbKey
+[2025-03-10 05:28:31.762][INF] Config: {"extras":{"ld":{"enable":true,"index":0,"path":"C:/leidian/LDPlayer9","pid":2104}}
+[2025-03-10 05:28:36.567][INF] 正在注册自定义识别器
+[2025-03-10 05:28:36.567][INF] 正在注册自定义行动
+[2025-03-10 05:28:38.586][INF] 截图用时较长: 503ms(Default)
+[2025-03-10 05:29:06.955][INF] 正在停止......
+[2025-03-10 05:29:07.235][INF] 已放弃本次任务
+[2025-03-10 05:29:09.738][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-10 05:29:09.739][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-10 05:29:09.774][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-10 05:29:09.804][INF] 正在载入资源
+[2025-03-10 05:29:09.804][INF] Resource: C:\Users\86187\Desktop\RMA-Ryumi_Autottk\Resource
+[2025-03-10 05:29:09.804][INF] 正在连接至模拟器......
+[2025-03-10 05:29:09.945][INF] GPU acceleration: Auto
+[2025-03-10 05:29:09.945][INF] AdbPath: C:/leidian/LDPlayer9/adb.exe
+[2025-03-10 05:29:09.945][INF] AdbSerial: emulator-5554
+[2025-03-10 05:29:09.945][INF] ScreenCap: Default
+[2025-03-10 05:29:09.945][INF] Input: MinitouchAndAdbKey
+[2025-03-10 05:29:09.945][INF] Config: {"extras":{"ld":{"enable":true,"index":0,"path":"C:/leidian/LDPlayer9","pid":2104}}
+[2025-03-10 05:29:14.035][INF] 正在注册自定义识别器
+[2025-03-10 05:29:14.035][INF] 正在注册自定义行动
+[2025-03-10 05:29:17.213][INF] 截图用时较长: 793ms(Default)
+[2025-03-10 05:41:01.154][INF] 正在停止......
+[2025-03-10 05:41:01.164][INF] 已放弃本次任务
+[2025-03-10 05:46:42.438][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-10 05:46:42.438][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-10 05:46:42.457][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-10 05:46:42.478][INF] 正在载入资源
+[2025-03-10 05:46:42.478][INF] Resource: C:\Users\86187\Desktop\RMA-Ryumi_Autottk\Resource
+[2025-03-10 05:46:42.479][INF] 正在连接至模拟器......
+[2025-03-10 05:46:42.575][INF] GPU acceleration: Auto
+[2025-03-10 05:46:42.575][INF] AdbPath: C:/leidian/LDPlayer9/adb.exe
+[2025-03-10 05:46:42.575][INF] AdbSerial: emulator-5554
+[2025-03-10 05:46:42.575][INF] ScreenCap: Default
+[2025-03-10 05:46:42.575][INF] Input: MinitouchAndAdbKey
+[2025-03-10 05:46:42.575][INF] Config: {"extras":{"ld":{"enable":true,"index":0,"path":"C:/leidian/LDPlayer9","pid":2104}}
+[2025-03-10 05:46:47.080][INF] 正在注册自定义识别器
+[2025-03-10 05:46:47.080][INF] 正在注册自定义行动
+[2025-03-10 05:46:49.047][INF] 截图用时较长: 490ms(Default)
+[2025-03-10 05:51:11.887][INF] 正在停止......
+[2025-03-10 05:51:13.415][INF] 已放弃本次任务

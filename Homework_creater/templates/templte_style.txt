@@ -4,6 +4,7 @@
         "template":["角色头像/@@风格@@.png","角色头像/@@风格@@2.png"],
         "roi":[0,500,1100,200],
         "threshold":0.9,
+        "order_by":"Score",
         "action":"Click",
         "post_delay":500
     },
@@ -21,6 +22,7 @@
             "角色头像/@@风格@@b10.png"
             ],
         "roi":[0,500,1100,200],
+        "order_by":"Score",
         "action":"Click",
         "post_delay":500
     }

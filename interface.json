@@ -126,18 +126,13 @@
         "练习模式":{
             "cases":[
                 {
-                    "name":"开启练习",
-                    "pipeline_override":{
-                        "ok异时层强敌":{
-                            "enable":false
-                        }
-                    }
+                    "name":"开启练习"
                 },
                 {
                     "name":"用票挑战",
                     "pipeline_override":{
                         "异时层勾选练习":{
-                            "enable":false
+                            "template": "异时层_挑战.png"
                         }
                     }
                 }
