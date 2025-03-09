@@ -1,0 +1,13 @@
+{
+  "Resource": "B 服",
+  "TaskItems": [],
+  "AdbDevice": {
+    "Name": "LDPlayer",
+    "AdbPath": "C:/leidian/LDPlayer9/adb.exe",
+    "AdbSerial": "emulator-5554",
+    "ScreencapMethods": 18446744073709551559,
+    "InputMethods": 18446744073709551607,
+    "Config": "{\"extras\":{\"ld\":{\"enable\":true,\"index\":0,\"path\":\"C:/leidian/LDPlayer9\",\"pid\":10104}}}"
+  },
+  "EnableEdit": false
+}
