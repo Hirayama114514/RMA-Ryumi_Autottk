@@ -21,7 +21,7 @@
         "action":"Click"
     },
     "等待加载":{
-        "post_delay":5000
+        "post_delay":300
     },
     "胜利轮进入回合":{
         "action":"StopTask"

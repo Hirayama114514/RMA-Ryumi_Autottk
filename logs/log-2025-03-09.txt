@@ -1,0 +1,856 @@
+[2025-03-09 01:46:16.360][INF] Loading configuration file...
+[2025-03-09 01:46:17.360][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-09 01:46:17.383][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 01:46:18.131][INF] 正在载入资源
+[2025-03-09 01:46:18.131][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 01:46:18.133][INF] 开始执行任务: 更新资源
+[2025-03-09 01:46:18.324][INF] 任务完成: 更新资源
+[2025-03-09 01:46:18.324][INF] 开始执行任务: 更新软件
+[2025-03-09 01:46:18.419][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 01:46:18.423][ERR] System.NullReferenceException: Object reference not set to an instance of an object.
+   at MFAWPF.Extensions.Maa.MaaProcessor.<TestConnecting>b__113_0() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1601
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+[2025-03-09 01:46:19.183][INF] 任务完成: 更新软件
+[2025-03-09 02:02:56.218][INF] Loading configuration file...
+[2025-03-09 02:02:57.047][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-09 02:02:57.069][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 02:02:57.615][INF] 正在载入资源
+[2025-03-09 02:02:57.615][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 02:02:57.616][INF] 开始执行任务: 更新资源
+[2025-03-09 02:02:57.707][INF] 任务完成: 更新资源
+[2025-03-09 02:02:57.707][INF] 开始执行任务: 更新软件
+[2025-03-09 02:02:57.833][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 02:02:57.835][ERR] System.NullReferenceException: Object reference not set to an instance of an object.
+   at MFAWPF.Extensions.Maa.MaaProcessor.<TestConnecting>b__113_0() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1601
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+[2025-03-09 02:02:58.435][INF] 任务完成: 更新软件
+[2025-03-09 02:03:17.085][INF] Loading configuration file...
+[2025-03-09 02:03:17.883][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-09 02:03:17.904][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 02:03:18.622][INF] 正在载入资源
+[2025-03-09 02:03:18.622][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 02:03:18.623][INF] 开始执行任务: 更新资源
+[2025-03-09 02:03:18.754][INF] 任务完成: 更新资源
+[2025-03-09 02:03:18.754][INF] 开始执行任务: 更新软件
+[2025-03-09 02:03:18.853][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 02:03:18.855][ERR] System.NullReferenceException: Object reference not set to an instance of an object.
+   at MFAWPF.Extensions.Maa.MaaProcessor.<TestConnecting>b__113_0() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1601
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+[2025-03-09 02:03:19.537][INF] 任务完成: 更新软件
+[2025-03-09 02:05:10.090][INF] Loading configuration file...
+[2025-03-09 02:05:10.885][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-09 02:05:10.907][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 02:05:11.474][INF] 正在载入资源
+[2025-03-09 02:05:11.475][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 02:05:11.476][INF] 开始执行任务: 更新资源
+[2025-03-09 02:05:11.537][INF] 任务完成: 更新资源
+[2025-03-09 02:05:11.537][INF] 开始执行任务: 更新软件
+[2025-03-09 02:05:11.695][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 02:05:11.697][ERR] System.NullReferenceException: Object reference not set to an instance of an object.
+   at MFAWPF.Extensions.Maa.MaaProcessor.<TestConnecting>b__113_0() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1601
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+[2025-03-09 02:05:12.385][INF] 任务完成: 更新软件
+[2025-03-09 02:05:40.822][INF] Loading configuration file...
+[2025-03-09 02:05:41.628][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-09 02:05:41.651][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 02:05:42.199][INF] 正在载入资源
+[2025-03-09 02:05:42.199][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 02:05:42.200][INF] 开始执行任务: 更新资源
+[2025-03-09 02:05:42.240][INF] 任务完成: 更新资源
+[2025-03-09 02:05:42.240][INF] 开始执行任务: 更新软件
+[2025-03-09 02:05:42.410][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 02:05:42.411][ERR] System.NullReferenceException: Object reference not set to an instance of an object.
+   at MFAWPF.Extensions.Maa.MaaProcessor.<TestConnecting>b__113_0() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1601
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+[2025-03-09 02:05:43.685][INF] 任务完成: 更新软件
+[2025-03-09 02:11:33.293][INF] Loading configuration file...
+[2025-03-09 02:11:34.583][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-09 02:11:34.608][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 02:11:35.332][INF] 正在载入资源
+[2025-03-09 02:11:35.332][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 02:11:35.334][INF] 开始执行任务: 更新资源
+[2025-03-09 02:11:35.422][INF] 任务完成: 更新资源
+[2025-03-09 02:11:35.422][INF] 开始执行任务: 更新软件
+[2025-03-09 02:11:35.854][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 02:11:35.856][ERR] System.NullReferenceException: Object reference not set to an instance of an object.
+   at MFAWPF.Extensions.Maa.MaaProcessor.<TestConnecting>b__113_0() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1601
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+[2025-03-09 02:11:37.207][INF] 任务完成: 更新软件
+[2025-03-09 02:11:37.267][ERR] System.ArgumentNullException: Value cannot be null. (Parameter 'window')
+   at System.Windows.Interop.WindowInteropHelper..ctor(Window window)
+   at MFAWPF.Helper.ToastNotification.FlashWindowEx(IntPtr hWnd, FlashType type, UInt32 count) in /home/runner/work/MFAWPF/MFAWPF/Helper/ToastNotification.cs:line 409
+   at MFAWPF.Helper.ToastNotification.<>c__DisplayClass18_0.<Show>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/ToastNotification.cs:line 229
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+[2025-03-09 02:13:01.288][INF] Loading configuration file...
+[2025-03-09 02:13:02.054][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-09 02:13:02.073][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 02:13:02.653][INF] 正在载入资源
+[2025-03-09 02:13:02.653][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 02:13:02.654][INF] 开始执行任务: 更新资源
+[2025-03-09 02:13:02.692][INF] 任务完成: 更新资源
+[2025-03-09 02:13:02.692][INF] 开始执行任务: 更新软件
+[2025-03-09 02:13:02.923][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 02:13:02.924][ERR] System.NullReferenceException: Object reference not set to an instance of an object.
+   at MFAWPF.Extensions.Maa.MaaProcessor.<TestConnecting>b__113_0() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1601
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+[2025-03-09 02:13:03.448][INF] 任务完成: 更新软件
+[2025-03-09 05:46:54.354][INF] Loading configuration file...
+[2025-03-09 05:46:55.927][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-09 05:46:55.964][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 05:46:56.578][ERR] Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: @. Path '10切换队伍.enable', line 24, position 17.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateDictionary(IDictionary dictionary, JsonReader reader, JsonDictionaryContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at MFAWPF.Views.UI.TaskQueueView.LoadTask() in /home/runner/work/MFAWPF/MFAWPF/Views/UI/TaskQueueView.xaml.cs:line 83
+[2025-03-09 05:46:57.490][INF] 正在载入资源
+[2025-03-09 05:46:57.490][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 05:46:57.492][INF] 开始执行任务: 更新资源
+[2025-03-09 05:46:57.645][INF] 任务完成: 更新资源
+[2025-03-09 05:46:57.646][INF] 开始执行任务: 更新软件
+[2025-03-09 05:46:57.798][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 05:46:57.801][ERR] System.NullReferenceException: Object reference not set to an instance of an object.
+   at MFAWPF.Extensions.Maa.MaaProcessor.<TestConnecting>b__113_0() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1601
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+[2025-03-09 05:46:58.339][INF] 任务完成: 更新软件
+[2025-03-09 05:55:02.658][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-09 05:55:02.660][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 05:55:03.191][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 05:55:03.253][INF] 正在载入资源
+[2025-03-09 05:55:03.253][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 05:55:03.260][INF] 正在连接至模拟器......
+[2025-03-09 05:55:03.372][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 05:55:03.378][INF] 连接失败
+正在尝试重连
+[2025-03-09 05:55:03.512][INF] 正在载入资源
+[2025-03-09 05:55:03.512][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 05:55:03.672][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 05:55:03.674][INF] 正在载入资源
+[2025-03-09 05:55:03.674][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 05:55:03.680][INF] 连接失败
+正在尝试重启 ADB Server
+[2025-03-09 05:55:03.829][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 05:55:03.833][INF] 连接失败
+正在尝试关闭并重启 ADB 进程
+[2025-03-09 05:55:03.833][INF] 正在载入资源
+[2025-03-09 05:55:03.833][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 05:55:03.986][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 05:55:03.987][WRN] 连接失败
+[2025-03-09 05:55:03.992][INF] 连接失败
+[2025-03-09 05:55:03.993][INF] 正在停止......
+[2025-03-09 05:55:03.994][INF] 已放弃本次任务
+[2025-03-09 05:56:02.620][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-09 05:56:02.621][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 05:56:02.659][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 05:56:02.688][INF] 正在载入资源
+[2025-03-09 05:56:02.688][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 05:56:02.689][INF] 正在连接至模拟器......
+[2025-03-09 05:56:02.847][INF] GPU acceleration: Auto
+[2025-03-09 05:56:02.848][INF] AdbPath: C:/leidian/LDPlayer9/adb.exe
+[2025-03-09 05:56:02.848][INF] AdbSerial: emulator-5554
+[2025-03-09 05:56:02.848][INF] ScreenCap: Default
+[2025-03-09 05:56:02.848][INF] Input: MinitouchAndAdbKey
+[2025-03-09 05:56:02.849][INF] Config: {"extras":{"ld":{"enable":true,"index":0,"path":"C:/leidian/LDPlayer9","pid":1248}}
+[2025-03-09 05:56:04.029][INF] 正在停止......
+[2025-03-09 05:56:04.031][INF] 已放弃本次任务
+[2025-03-09 05:56:07.300][WRN] Tasker initialization was canceled
+[2025-03-09 05:56:25.013][INF] Loading configuration file...
+[2025-03-09 05:56:26.341][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-09 05:56:26.379][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 05:56:26.742][INF] 正在载入资源
+[2025-03-09 05:56:26.742][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 05:56:26.743][INF] 开始执行任务: 更新资源
+[2025-03-09 05:56:26.857][INF] 任务完成: 更新资源
+[2025-03-09 05:56:26.857][INF] 开始执行任务: 更新软件
+[2025-03-09 05:56:27.061][INF] GPU acceleration: Auto
+[2025-03-09 05:56:27.062][INF] AdbPath: C:/leidian/LDPlayer9/adb.exe
+[2025-03-09 05:56:27.062][INF] AdbSerial: emulator-5554
+[2025-03-09 05:56:27.062][INF] ScreenCap: Default
+[2025-03-09 05:56:27.062][INF] Input: MinitouchAndAdbKey
+[2025-03-09 05:56:27.063][INF] Config: {"extras":{"ld":{"enable":true,"index":0,"path":"C:/leidian/LDPlayer9","pid":1248}}
+[2025-03-09 05:56:27.491][INF] 任务完成: 更新软件
+[2025-03-09 05:56:31.693][INF] 正在注册自定义识别器
+[2025-03-09 05:56:31.693][INF] 正在注册自定义行动
+[2025-03-09 06:16:11.617][INF] Loading configuration file...
+[2025-03-09 06:16:12.500][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-09 06:16:12.523][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 06:16:13.307][INF] 正在载入资源
+[2025-03-09 06:16:13.308][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 06:16:13.309][INF] 开始执行任务: 更新资源
+[2025-03-09 06:16:13.440][INF] 任务完成: 更新资源
+[2025-03-09 06:16:13.440][INF] 开始执行任务: 更新软件
+[2025-03-09 06:16:13.545][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 06:16:13.546][ERR] System.NullReferenceException: Object reference not set to an instance of an object.
+   at MFAWPF.Extensions.Maa.MaaProcessor.<TestConnecting>b__113_0() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1601
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+[2025-03-09 06:16:14.086][INF] 任务完成: 更新软件
+[2025-03-09 06:16:38.146][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-09 06:16:38.148][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 06:16:38.153][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 06:16:38.163][INF] 正在载入资源
+[2025-03-09 06:16:38.163][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 06:16:38.173][INF] 正在连接至模拟器......
+[2025-03-09 06:16:38.183][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 06:16:38.189][INF] 连接失败
+正在尝试重连
+[2025-03-09 06:16:38.310][INF] 正在载入资源
+[2025-03-09 06:16:38.310][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 06:16:38.325][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 06:16:38.327][INF] 正在载入资源
+[2025-03-09 06:16:38.327][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 06:16:38.333][INF] 连接失败
+正在尝试重启 ADB Server
+[2025-03-09 06:16:38.347][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 06:16:38.350][INF] 正在载入资源
+[2025-03-09 06:16:38.350][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 06:16:38.356][INF] 连接失败
+正在尝试关闭并重启 ADB 进程
+[2025-03-09 06:16:38.371][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 06:16:38.372][WRN] 连接失败
+[2025-03-09 06:16:38.377][INF] 连接失败
+[2025-03-09 06:16:38.379][INF] 正在停止......
+[2025-03-09 06:16:38.379][INF] 已放弃本次任务
+[2025-03-09 06:19:50.628][INF] Loading configuration file...
+[2025-03-09 06:19:51.911][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-09 06:19:51.946][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 06:19:52.909][INF] 正在载入资源
+[2025-03-09 06:19:52.909][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 06:19:52.911][INF] 开始执行任务: 更新资源
+[2025-03-09 06:19:53.067][INF] 任务完成: 更新资源
+[2025-03-09 06:19:53.067][INF] 开始执行任务: 更新软件
+[2025-03-09 06:19:53.217][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 06:19:53.219][ERR] System.NullReferenceException: Object reference not set to an instance of an object.
+   at MFAWPF.Extensions.Maa.MaaProcessor.<TestConnecting>b__113_0() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1601
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+[2025-03-09 06:19:53.821][INF] 任务完成: 更新软件
+[2025-03-09 06:50:49.085][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-09 06:50:49.087][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 06:50:49.093][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 06:50:49.106][INF] 正在载入资源
+[2025-03-09 06:50:49.106][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 06:50:49.118][INF] 正在连接至模拟器......
+[2025-03-09 06:50:49.131][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 06:50:49.144][INF] 连接失败
+正在尝试重连
+[2025-03-09 06:50:49.243][INF] 正在载入资源
+[2025-03-09 06:50:49.243][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 06:50:49.262][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 06:50:49.265][INF] 正在载入资源
+[2025-03-09 06:50:49.265][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 06:50:49.272][INF] 连接失败
+正在尝试重启 ADB Server
+[2025-03-09 06:50:49.286][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 06:50:49.289][INF] 正在载入资源
+[2025-03-09 06:50:49.290][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 06:50:49.292][INF] 连接失败
+正在尝试关闭并重启 ADB 进程
+[2025-03-09 06:50:49.309][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 06:50:49.310][WRN] 连接失败
+[2025-03-09 06:50:49.315][INF] 连接失败
+[2025-03-09 06:50:49.315][INF] 正在停止......
+[2025-03-09 06:50:49.316][INF] 已放弃本次任务
+[2025-03-09 06:50:50.452][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-09 06:50:50.452][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 06:50:50.454][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 06:50:50.455][INF] 正在载入资源
+[2025-03-09 06:50:50.455][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 06:50:50.462][INF] 正在连接至模拟器......
+[2025-03-09 06:50:50.476][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 06:50:50.477][INF] 连接失败
+正在尝试重连
+[2025-03-09 06:50:50.588][INF] 正在载入资源
+[2025-03-09 06:50:50.588][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 06:50:50.608][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 06:50:50.608][INF] 正在载入资源
+[2025-03-09 06:50:50.608][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 06:50:50.615][INF] 连接失败
+正在尝试重启 ADB Server
+[2025-03-09 06:50:50.627][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 06:50:50.628][INF] 正在载入资源
+[2025-03-09 06:50:50.628][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 06:50:50.634][INF] 连接失败
+正在尝试关闭并重启 ADB 进程
+[2025-03-09 06:50:50.650][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 06:50:50.650][WRN] 连接失败
+[2025-03-09 06:50:50.652][INF] 连接失败
+[2025-03-09 06:50:50.652][INF] 正在停止......
+[2025-03-09 06:50:50.652][INF] 已放弃本次任务
+[2025-03-09 06:50:50.950][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-09 06:50:50.951][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 06:50:50.952][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 06:50:50.953][INF] 正在载入资源
+[2025-03-09 06:50:50.953][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 06:50:50.953][INF] 正在连接至模拟器......
+[2025-03-09 06:50:50.972][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 06:50:50.979][INF] 连接失败
+正在尝试重连
+[2025-03-09 06:50:51.090][INF] 正在载入资源
+[2025-03-09 06:50:51.090][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 06:50:51.112][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 06:50:51.112][INF] 正在载入资源
+[2025-03-09 06:50:51.112][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 06:50:51.119][INF] 连接失败
+正在尝试重启 ADB Server
+[2025-03-09 06:50:51.134][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 06:50:51.134][INF] 正在载入资源
+[2025-03-09 06:50:51.134][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 06:50:51.135][INF] 连接失败
+正在尝试关闭并重启 ADB 进程
+[2025-03-09 06:50:51.155][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 06:50:51.156][WRN] 连接失败
+[2025-03-09 06:50:51.157][INF] 连接失败
+[2025-03-09 06:50:51.157][INF] 正在停止......
+[2025-03-09 06:50:51.157][INF] 已放弃本次任务
+[2025-03-09 09:15:42.971][INF] Loading configuration file...
+[2025-03-09 09:15:43.892][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-09 09:15:43.917][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 09:15:44.555][INF] 正在载入资源
+[2025-03-09 09:15:44.555][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 09:15:44.556][INF] 开始执行任务: 更新资源
+[2025-03-09 09:15:44.740][INF] 任务完成: 更新资源
+[2025-03-09 09:15:44.740][INF] 开始执行任务: 更新软件
+[2025-03-09 09:15:44.825][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 09:15:44.827][ERR] System.NullReferenceException: Object reference not set to an instance of an object.
+   at MFAWPF.Extensions.Maa.MaaProcessor.<TestConnecting>b__113_0() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1601
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+[2025-03-09 09:15:45.439][INF] 任务完成: 更新软件
+[2025-03-09 09:15:48.057][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-09 09:15:48.058][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 09:15:48.062][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 09:15:48.079][INF] 正在载入资源
+[2025-03-09 09:15:48.079][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 09:15:48.092][INF] 正在连接至模拟器......
+[2025-03-09 09:15:48.101][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 09:15:48.114][INF] 连接失败
+正在尝试重连
+[2025-03-09 09:15:48.248][INF] 正在载入资源
+[2025-03-09 09:15:48.248][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 09:15:48.269][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 09:15:48.272][INF] 正在载入资源
+[2025-03-09 09:15:48.272][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 09:15:48.280][INF] 连接失败
+正在尝试重启 ADB Server
+[2025-03-09 09:15:48.293][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 09:15:48.296][INF] 正在载入资源
+[2025-03-09 09:15:48.297][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 09:15:48.304][INF] 连接失败
+正在尝试关闭并重启 ADB 进程
+[2025-03-09 09:15:48.317][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding\Extensions\MaaJobStatusExtensions.cs:line 31
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 74
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaResource.cs:line 59
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass94_1.<InitializeMaaTasker>b__1() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1037
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-03-09 09:15:48.318][WRN] 连接失败
+[2025-03-09 09:15:48.329][INF] 连接失败
+[2025-03-09 09:15:48.331][INF] 正在停止......
+[2025-03-09 09:15:48.331][INF] 已放弃本次任务
+[2025-03-09 09:18:41.249][INF] MFAWPF Version: [mfa.version=v1.2.7.1] Interface Version: [data.version=v0.101] 
+[2025-03-09 09:18:41.250][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 09:18:41.859][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-03-09 09:18:41.861][INF] 正在载入资源
+[2025-03-09 09:18:41.861][INF] Resource: C:\Users\86187\Desktop\LMA-Ryumi_Autottk\Resource
+[2025-03-09 09:18:41.865][INF] 正在连接至模拟器......
+[2025-03-09 09:18:41.988][INF] GPU acceleration: Auto
+[2025-03-09 09:18:41.988][INF] AdbPath: C:/leidian/LDPlayer9/adb.exe
+[2025-03-09 09:18:41.988][INF] AdbSerial: emulator-5554
+[2025-03-09 09:18:41.988][INF] ScreenCap: Default
+[2025-03-09 09:18:41.988][INF] Input: MinitouchAndAdbKey
+[2025-03-09 09:18:41.988][INF] Config: {"extras":{"ld":{"enable":true,"index":0,"path":"C:/leidian/LDPlayer9","pid":1248}}
+[2025-03-09 09:18:43.582][INF] 正在停止......
+[2025-03-09 09:18:43.586][INF] 已放弃本次任务
+[2025-03-09 09:18:43.983][WRN] Tasker initialization was canceled

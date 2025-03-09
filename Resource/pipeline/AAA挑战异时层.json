@@ -5,6 +5,7 @@
         ],
         "interrupt": [
             "异时层勾选练习",
+            "ok异时层强敌",
             "挑战异时层强敌",
             "选择异时层强敌",
             "异时层选择界面向右",
@@ -14,21 +15,40 @@
     },
     "出击异时层强敌": {
         "recognition": "TemplateMatch",
-        "template": "出击.png",
+        "template": "异时层_出击.png",
         "threshold": 0.9,
         "action": "Click",
-        "post_delay": 500
+        "post_delay": 500,
+        "next":["进入战斗"]
+    },
+    "ok异时层强敌":{
+        "recognition":"OCR",
+        "expected":"消耗票券",
+        "roi":[300,300,300,300],
+        "next":["点击ok"],
+        "interrupt":["增加票数"]
+    },
+    "点击ok":{
+        "recognition":"OCR",
+        "expected":["1"],
+        "roi":[666,356,95,95],
+        "action":"Click",
+        "target":[710,560,220,70]
+    },
+    "增加票数":{
+        "action":"Click",
+        "target":[777,400,20,20]
     },
     "挑战异时层强敌": {
         "recognition": "TemplateMatch",
-        "template": "挑战.png",
+        "template": "异时层_挑战.png",
         "threshold": 0.9,
         "action": "Click",
         "post_delay": 500
     },
     "异时层勾选练习": {
         "recognition": "TemplateMatch",
-        "template": "练习.png",
+        "template": "异时层_练习.png",
         "threshold": 0.9,
         "action": "Click",
         "post_delay": 500

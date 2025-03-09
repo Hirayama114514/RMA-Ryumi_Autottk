@@ -29,8 +29,17 @@
             "entry":"挑战异时层",
             "option":[
                 "异时层强敌",
-                "练习模式"
+                "练习模式",
+                "使用票数"
             ]
+        },
+        {
+            "name":"挑战高分挑战",
+            "entry":"高分挑战"
+        },
+        {
+            "name":"挑战钟楼",
+            "entry":"挑战钟楼"
         },
         {
             "name":"代理作战",
@@ -40,6 +49,54 @@
     "option": {
         "异时层强敌":{
             "cases":[
+                {
+                    "name":"死亡蛞蝓",
+                    "pipeline_override":{
+                        "选择异时层强敌":{
+                            "expected":"死亡"
+                        }
+                    }
+                },
+                {
+                    "name":"畸旋钻",
+                    "pipeline_override":{
+                        "选择异时层强敌":{
+                            "expected":"畸旋钻"
+                        }
+                    }
+                },
+                {
+                    "name":"猩红之主",
+                    "pipeline_override":{
+                        "选择异时层强敌":{
+                            "expected":"红之主"
+                        }
+                    }
+                },
+                {
+                    "name":"感应触须",
+                    "pipeline_override":{
+                        "选择异时层强敌":{
+                            "expected":"感应"
+                        }
+                    }
+                },
+                {
+                    "name":"普通覆地之手",
+                    "pipeline_override":{
+                        "选择异时层强敌":{
+                            "expected":"第三章Day21"
+                        }
+                    }
+                },
+                {
+                    "name":"终极触须",
+                    "pipeline_override":{
+                        "选择异时层强敌":{
+                            "expected":"终极"
+                        }
+                    }
+                },
                 {
                     "name":"究极覆地之手",
                     "pipeline_override":{
@@ -67,15 +124,68 @@
             ]
         },
         "练习模式":{
-            "cases":[{
-                "name":"开启练习"
-            },
-            {
-                "name":"用票挑战"
-            }
+            "cases":[
+                {
+                    "name":"开启练习",
+                    "pipeline_override":{
+                        "ok异时层强敌":{
+                            "enable":false
+                        }
+                    }
+                },
+                {
+                    "name":"用票挑战",
+                    "pipeline_override":{
+                        "异时层勾选练习":{
+                            "enable":false
+                        }
+                    }
+                }
+            ]
+        },
+        "使用票数":{
+            "cases":[
+                {
+                    "name":"1",
+                    "pipeline_override":{
+                        "点击ok":{
+                            "expected":"1"
+                        }
+                    }
+                },
+                {
+                    "name":"2",
+                    "pipeline_override":{
+                        "点击ok":{
+                            "expected":"2"
+                        }
+                    }
+                },
+                {
+                    "name":"3",
+                    "pipeline_override":{
+                        "点击ok":{
+                            "expected":"3"
+                        }
+                    }
+                },
+                {
+                    "name":"4",
+                    "pipeline_override":{
+                        "点击ok":{
+                            "expected":"4"
+                        }
+                    }
+                },
+                {
+                    "name":"5",
+                    "pipeline_override":{
+                        "点击ok":{
+                            "expected":"5"
+                        }
+                    }
+                }
             ]
         }
-
-
     }
 }

@@ -1,0 +1,53 @@
+{
+  "Resource": "B 服",
+  "TaskItems": [
+    {
+      "name": "启动游戏",
+      "entry": "登录_app启动",
+      "check": false
+    },
+    {
+      "name": "挑战异时层",
+      "entry": "挑战异时层",
+      "check": false,
+      "option": [
+        {
+          "name": "异时层强敌",
+          "index": 0
+        },
+        {
+          "name": "练习模式",
+          "index": 0
+        },
+        {
+          "name": "使用票数",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "name": "挑战高分挑战",
+      "entry": "高分挑战",
+      "check": false
+    },
+    {
+      "name": "挑战钟楼",
+      "entry": "挑战钟楼",
+      "check": false
+    },
+    {
+      "name": "代理作战",
+      "entry": "进入战斗",
+      "check": false
+    }
+  ],
+  "AdbDevice": {
+    "Name": "LDPlayer",
+    "AdbPath": "C:/leidian/LDPlayer9/adb.exe",
+    "AdbSerial": "emulator-5554",
+    "ScreencapMethods": 18446744073709551559,
+    "InputMethods": 18446744073709551607,
+    "Config": "{\"extras\":{\"ld\":{\"enable\":true,\"index\":0,\"path\":\"C:/leidian/LDPlayer9\",\"pid\":1248}}}"
+  },
+  "EnableEdit": false
+}

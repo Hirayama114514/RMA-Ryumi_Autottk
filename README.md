@@ -8,39 +8,61 @@
 目前已有的功能：
 
 - 切换到游戏界面
-- 进入指定的异时层关卡练习
+- 挑战指定的异时层
+- 挑战高分挑战
+- 挑战钟楼
 - 代理您的局内战斗
+- 检测战败，自动重凹
 - 生成便于分享的作业，和同学们分享你的思维！
 - 一键抄作业，连接外置大脑！
 
 正在开发的功能：
 
-- 进入指定的异时层关卡用票挑战
-- 进入指定难度等级/词条等级的高分挑战
-- 进入钟楼战斗
+- 自动指定高分挑战难度等级/词条等级
+- 挑战恒星战
 - 进入光球boss
-- 战败重战
-- 检测指定的凹点（如概率回费，概率miss），失败则退出重凹
-- 在亡骨之翎之外的异时层战斗中切换队伍
+- 检测指定的凹点（如概率回费，伤害浮动），失败则退出重战
 - 自动配队
+- 一定范围内的应变能力。
 
 ## 使用说明
-> [!warning]
+> [!WARNING]
+>
+>开发者并非专业人士或具备相关知识，提供的信息请鉴别后谨慎参考
 
-- [新手上路](**使用前必看**)
+- [新手上路](./docs/zh_cn/manual/新手上路.md)
 
-- [功能介绍](**正在编写**)
+- [功能介绍](./docs/zh_cn/manual/功能介绍.md)
 
-- [连接设置]
+- [连接设置](./docs/zh_cn/manual/连接设置.md)
 
-- [常见问题]
+- [常见问题](./docs/zh_cn/manual/常见问题.md)
 
 ## 开发相关
 
+> [!NOTE]
+>
+> 只有当您想要开发 RMA 时才需要看当前部分！
+>
+> 用户请参考[上一部分](#使用说明)
+>
+> 开发 MaaFramework 或开发自己的项目请到 [MaaXYZ/MaaFramework](https://github.com/MaaXYZ/MaaFramework)。
+
+> [!WARNING]
+>
+>开发者并非专业人士或具备相关知识，提供的信息请鉴别后谨慎参考
 - [MaaFW 开发思路](https://github.com/MaaXYZ/MaaFramework/blob/main/docs/zh_cn/1.1-%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B.md#%E5%BC%80%E5%8F%91%E6%80%9D%E8%B7%AF)  
   > LMA(本工具) 目前使用其中第一种方式（纯 Pipeline 低代码），  
   > 后续有机会迁移到第二种方式（Pipeline + 自定义任务）
   > 
+- [开发前须知](./docs/zh_cn/develop/开发前须知.md)
+- [interface.json编写](./docs/zh_cn/develop/interface.json编写.md)
+- [Pipeline编写](./docs/zh_cn/develop/Pipeline编写.md)
+- [Bug排查](./docs/zh_cn/develop/Bug排查.md)
+- [项目重构](./docs/zh_cn/develop/项目重构.md)
+- [活动资源维护](./docs/zh_cn/develop/活动资源维护.md)
+- [外服适配](./docs/zh_cn/develop/外服适配.md)
+- [文档编写](./docs/zh_cn/develop/文档编写.md)
 更多文档请前往 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 主仓库查看
 
 ## 鸣谢
@@ -49,7 +71,9 @@
 
 感谢MAAFW开发群群友对本人的指导！
 
+感谢其他MAAFW优秀实践对本项目提供的参考！
+
 ## Join us
 
-- LMA 闲聊，问题反馈，作业分享 QQ 群：602066368
+- RMA 闲聊，问题反馈，作业分享 QQ 群：602066368
 - MaaFramework 开发交流 QQ 群: 595990173
