@@ -1,0 +1,91 @@
+{
+    "挑战异时层": {
+        "next": [
+            "异时层强敌_出击"
+        ],
+        "interrupt": [
+            "异时层_勾选练习",
+            "异时层强敌_ok",
+            "异时层强敌_挑战",
+            "异时层强敌_选择敌人",
+            "异时层强敌_选敌界面向右",
+            "异时层强敌_打开异时层",
+            "异时层强敌_打开强化/养成"
+        ]
+    },
+    "异时层强敌_出击": {
+        "recognition": "TemplateMatch",
+        "template": "异时层_出击.png",
+        "threshold": 0.9,
+        "action": "Click",
+        "post_delay": 500
+    },
+    "异时层强敌_ok":{
+        "recognition":"OCR",
+        "expected":"消耗票券",
+        "roi":[300,300,300,300],
+        "next":["异时层强敌_点击ok_异时层票券数量"],
+        "interrupt":["异时层强敌_增加票数_异时层票券数量"]
+    },
+    "异时层强敌_点击ok_异时层票券数量":{
+        "recognition":"OCR",
+        "expected":["1"],
+        "roi":[666,356,95,95],
+        "action":"Click",
+        "target":[710,560,220,70]
+    },
+    "异时层强敌_增加票数_异时层票券数量":{
+        "action":"Click",
+        "target":[777,400,20,20]
+    },
+    "异时层强敌_挑战": {
+        "recognition": "TemplateMatch",
+        "template": "异时层_挑战.png",
+        "threshold": 0.9,
+        "action": "Click",
+        "post_delay": 500
+    },
+    "异时层_勾选练习": {
+        "recognition": "TemplateMatch",
+        "template": "异时层_练习.png",
+        "threshold": 0.9,
+        "action": "Click",
+        "post_delay": 500
+    },
+    "异时层强敌_选择敌人": {
+        "recognition": "OCR",
+        "expected": "上篇Day12",
+        "action": "Click",
+        "post_delay": 500
+    },
+    "异时层强敌_选敌界面向右": {
+        "recognition": "OCR",
+        "expected": "高级奖章兑换所",
+        "post_delay":1000,
+        "action": "Swipe",
+        "begin": [
+            1000,
+            300,
+            1,
+            1
+        ],
+        "end": [
+            700,
+            300,
+            1,
+            1
+        ]
+    },
+    "异时层强敌_打开异时层": {
+        "recognition": "OCR",
+        "expected": "异时层",
+        "action": "Click",
+        "post_delay": 500
+    },
+    "异时层强敌_打开强化/养成": {
+        "recognition": "OCR",
+        "expected": "强化/养成",
+        "action": "Click",
+        "post_delay": 500
+    }
+}

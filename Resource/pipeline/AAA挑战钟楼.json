@@ -1,0 +1,32 @@
+{
+    "挑战钟楼": {
+        "next": [
+            "钟楼_出击"
+        ],
+        "interrupt": [
+            "钟楼_点击战斗",
+            "钟楼_点击叹号"
+        ]
+    },
+    "钟楼_出击": {
+        "recognition": "TemplateMatch",
+        "template": "钟楼_出击.png",
+        "threshold": 0.9,
+        "action": "Click",
+        "post_delay": 500
+    },
+    "钟楼_点击战斗": {
+        "recognition": "TemplateMatch",
+        "template": "钟楼_战斗.png",
+        "threshold": 0.9,
+        "action": "Click",
+        "post_delay": 500
+    },
+    "钟楼_点击叹号": {
+        "recognition": "TemplateMatch",
+        "template":"交互叹号.png",
+        "threshold": 0.9,
+        "action": "Click",
+        "post_delay": 500
+    }
+}

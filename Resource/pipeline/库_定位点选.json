@@ -1,0 +1,187 @@
+{
+    "选择0": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png"
+    },
+    "选择0b": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png"
+    },
+    "选择1": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "action": "Click",
+        "target": [
+            100,
+            600,
+            30,
+            30
+        ],
+        "post_delay":500
+    },
+    "交换1": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "inverse": true,
+        "template": "开始行动.png",
+        "action": "Click",
+        "target": [
+            100,
+            600,
+            30,
+            30
+        ],
+        "post_delay":500
+    },
+    "选择2": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "action": "Click",
+        "target": [
+            290,
+            600,
+            30,
+            30
+        ],
+        "post_delay":500
+    },
+    "交换2": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "inverse": true,
+        "template": "开始行动.png",
+        "action": "Click",
+        "target": [
+            290,
+            600,
+            30,
+            30
+        ],
+        "post_delay":500
+    },
+    "选择3": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "action": "Click",
+        "target": [
+            480,
+            600,
+            30,
+            30
+        ],
+        "post_delay":500
+    },
+    "交换3": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "inverse": true,
+        "template": "开始行动.png",
+        "action": "Click",
+        "target": [
+            480,
+            600,
+            30,
+            30
+        ],
+        "post_delay":500
+    },
+    "选择4": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "action": "Click",
+        "target": [
+            680,
+            600,
+            30,
+            30
+        ],
+        "post_delay":500
+    },
+    "选择5": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "action": "Click",
+        "target": [
+            840,
+            600,
+            30,
+            30
+        ],
+        "post_delay":500
+    },
+    "选择6": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "action": "Click",
+        "target": [
+            1000,
+            600,
+            30,
+            30
+        ],
+        "post_delay":500
+    }
+}

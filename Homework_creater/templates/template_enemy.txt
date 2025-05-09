@@ -1,0 +1,56 @@
+{
+    "选择-1": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "action": "Click",
+        "target": [
+            @@左1x@@,
+            @@左1y@@,
+            30,
+            30
+        ],
+        "post_delay":500
+    },
+    "选择-2": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "action": "Click",
+        "target": [
+            @@左2x@@,
+            @@左2y@@,
+            30,
+            30
+        ],
+        "post_delay":500
+    },
+    "选择-3": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "action": "Click",
+        "target": [
+            @@左3x@@,
+            @@左3y@@,
+            30,
+            30
+        ],
+        "post_delay":500
+    }
+}

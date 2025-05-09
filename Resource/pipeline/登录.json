@@ -1,0 +1,6 @@
+{
+    "登录_app启动": {
+        "action": "StartApp",
+        "package": "com.bilibili.heaven"
+    }
+}

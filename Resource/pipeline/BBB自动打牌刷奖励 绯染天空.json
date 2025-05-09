@@ -1,0 +1,61 @@
+{
+    "绯染天空_技术模拟战_刷分开始": {
+        "recognition": "TemplateMatch",
+        "template":"绯染天空steam分部/绯染天空_技术模拟战_技术卡清单.png",
+        "next": [
+            "绯染天空_技术模拟战_选择31C普通"
+        ],
+        "interrupt": [
+            "绯染天空_技术模拟战_下拉"
+        ]
+    },
+    "绯染天空_技术模拟战_挑战":{
+        "threshold": 0.9,
+        "action": "Click",
+        "target":[700,550,100,20],
+        "post_delay": 500,
+        "next":["绯染天空_技术模拟战_等待战斗结果"]
+    },
+    "绯染天空_技术模拟战_选择31C普通": {
+        "recognition": "TemplateMatch",
+        "template":"绯染天空steam分部/绯染天空_技术模拟战_31C普通.png",
+        "action": "Click",
+        "post_delay": 500,
+        "next":["绯染天空_技术模拟战_挑战"]
+    },
+    "绯染天空_技术模拟战_下拉": {
+        "recognition": "TemplateMatch",
+        "template":"绯染天空steam分部/绯染天空_技术模拟战_技术卡清单.png",
+
+        "post_delay":1000,
+        "action": "Swipe",
+        "begin": [
+            600,
+            580,
+            1,
+            1
+        ],
+        "end": [
+            600,
+            290,
+            1,
+            1
+        ]
+    },
+    "绯染天空_技术模拟战_等待战斗结果":{
+        "next":["绯染天空_技术模拟战_对局结算"],
+        "interrupt":["等待加载"]
+    },
+    "绯染天空_技术模拟战_对局结算":{
+        "recognition": "TemplateMatch",
+        "template": ["绯染天空steam分部/绯染天空_技术模拟战_clear.png"],
+
+        "threshold": 0.9,
+        "next":["绯染天空_技术模拟战_刷分开始"],
+        "interrupt":["绯染天空_技术模拟战_收取奖励"]
+    },
+    "绯染天空_技术模拟战_收取奖励":{
+        "action":"Click",
+        "target":[1150,350,50,50]
+    }
+}

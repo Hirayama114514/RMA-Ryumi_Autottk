@@ -1,0 +1,30 @@
+{
+    "战败检测_亡骨之翎":{
+        "recognition": "OCR",
+        "expected": "高级奖章兑换所",
+        "pre_delay":3000,
+        "next":["挑战异时层"]
+    },
+    "战败检测_异时层":{
+        "recognition":"TemplateMatch",
+        "template":"异时层_gameover.png",
+        "action":"Click",
+        "pre_delay":500,
+        "post_delay":5000,
+        "next":["挑战异时层"]
+    },
+    "战败检测_高分挑战":{
+        "recognition":"TemplateMatch",
+        "template":"高分挑战_地图.png",
+        "pre_delay":3000,
+        "next":["高分挑战"]
+    },
+    "战败检测_钟楼":{
+        "recognition":"TemplateMatch",
+        "template":"钟楼_奖励一览.png",
+        "pre_delay":3000,
+        "next":["挑战钟楼"]
+    },
+    "战败检测_恒星战":{
+    }
+}

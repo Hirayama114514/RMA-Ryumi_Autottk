@@ -1,0 +1,63 @@
+{
+    "技术模拟战_刷分开始": {
+        "recognition": "TemplateMatch",
+        "template":"技术模拟战_技术卡列表.png",
+        "next": [
+            "技术模拟战_挑战"
+        ],
+        "interrupt": [
+            "技术模拟战_选择31A普通",
+            "技术模拟战_下拉"
+        ]
+    },
+    "技术模拟战_挑战":{
+        "recognition": "TemplateMatch",
+        "template": "技术模拟战_挑战.png",
+        "roi":[650,530,350,115],
+        "threshold": 0.9,
+        "action": "Click",
+        "post_delay": 500,
+        "next":["技术模拟战_等待战斗结果"]
+    },
+    "技术模拟战_选择31A普通": {
+        "recognition": "TemplateMatch",
+        "template":"技术模拟战_31A普通.png",
+        "action": "Click",
+        "post_delay": 500
+    },
+    "技术模拟战_下拉": {
+        "recognition": "TemplateMatch",
+        "template":"技术模拟战_技术卡列表.png",
+        "roi":[980,15,200,70],
+        "post_delay":1000,
+        "action": "Swipe",
+        "begin": [
+            600,
+            500,
+            1,
+            1
+        ],
+        "end": [
+            600,
+            190,
+            1,
+            1
+        ]
+    },
+    "技术模拟战_等待战斗结果":{
+        "next":["技术模拟战_对局结算"],
+        "interrupt":["等待加载"]
+    },
+    "技术模拟战_对局结算":{
+        "recognition": "TemplateMatch",
+        "template": ["技术模拟战_clear.png","技术模拟战_failed.png"],
+        "roi":[950,600,350,100],
+        "threshold": 0.9,
+        "next":["技术模拟战_刷分开始"],
+        "interrupt":["技术模拟战_收取奖励"]
+    },
+    "技术模拟战_收取奖励":{
+        "action":"Click",
+        "target":[1200,300,60,60]
+    }
+}

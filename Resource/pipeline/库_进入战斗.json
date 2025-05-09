@@ -1,0 +1,36 @@
+{
+    "进入战斗":{
+        "next":["进入战斗成功"],
+        "interrupt":["跳过人生","等待加载"]
+    },
+    "进入战斗成功":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "next":["请输入作业名称_1轮_进入回合"]
+    },
+    "跳过人生":{
+        "recognition":"TemplateMatch",
+        "template":["跳过剧情.png"],
+        "roi":[1080,25,100,100],
+        "action":"Click"
+    },
+    "等待加载":{
+        "post_delay":300
+    },
+    "等待较长加载":{
+        "post_delay":15000
+    },
+    "异时层切换队伍":{
+        "action":"Click",
+        "target":[750,530,50,50]
+    },
+    "胜利轮进入回合":{
+        "action":"StopTask"
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "寻找10":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "inverse": true,
+        "template": "开始行动.png",
+        "next":["点击10"]
+    },
+    "点击10":{
+        "action":"Click",
+        "target":[100,400,110,60],
+        "next":["选择0"]
+    },
+    "寻找20":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "action":"Click",
+        "target":[215,30,75,15]
+    },
+    "下滑战斗中技能栏":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "inverse": true,
+        "template": "开始行动.png",
+        "action":"Swipe",
+        "begin":[700,400,10,10],
+        "end":[700,160,10,10],
+        "post_delay":1000
+    }
+}

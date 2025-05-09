@@ -1,0 +1,29 @@
+{
+    "选择@@风格@@":{
+        "recognition":"TemplateMatch",
+        "template":["角色头像/@@风格@@.png","角色头像/@@风格@@2.png"],
+        "roi":[0,500,1100,200],
+        "threshold":0.9,
+        "order_by":"Score",
+        "action":"Click",
+        "post_delay":500
+    },
+    "选择@@风格@@b":{
+        "recognition":"FeatureMatch",
+        "template":[
+            "角色头像/@@风格@@b.png",
+            "角色头像/@@风格@@b2.png",
+            "角色头像/@@风格@@b3.png",
+            "角色头像/@@风格@@b4.png",
+            "角色头像/@@风格@@b5.png",
+            "角色头像/@@风格@@b7.png",
+            "角色头像/@@风格@@b8.png",
+            "角色头像/@@风格@@b9.png",
+            "角色头像/@@风格@@b10.png"
+            ],
+        "roi":[0,500,1100,200],
+        "order_by":"Score",
+        "action":"Click",
+        "post_delay":500
+    }
+}
