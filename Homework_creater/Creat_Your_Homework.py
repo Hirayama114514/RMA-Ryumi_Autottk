@@ -6,11 +6,28 @@ from io import StringIO
 from tkinter import Tk, filedialog  # 👈 新增导入
 
 # ========== 主配置 ==========
-config_excel_path = "config.xlsx"     # Sheet配置文件
+# 获取脚本所在的绝对路径
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# 关键文件路径强制基于脚本目录
+config_excel_path = os.path.join(BASE_DIR, "config.xlsx")  # Sheet配置文件
+data_excel_path = os.path.join(BASE_DIR, "data.xlsx")
+template_folder = os.path.join(BASE_DIR, "templates")  # 👈 新增模板目录路径
+output_root = os.path.join(BASE_DIR, "output")         # 👈 强制输出到项目目录
+# 验证必要目录存在
+os.makedirs(template_folder, exist_ok=True)
+os.makedirs(output_root, exist_ok=True)
+# ============================
 global_sheet_name = "global"  # 全局变量Sheet名称
 split_char = "、"                      # 数据分隔符
 placeholder = "@@"                    # 占位符
 # ============================
+def graceful_exit(message=None):
+    """优雅退出（带暂停）"""
+    if message:
+        print(message)
+    input("\n【请按回车键退出程序...】")
+    exit()
 
 def get_data_file_gui():
     """通过图形界面选择Excel文件"""
@@ -43,13 +60,20 @@ def replace_global_placeholders(text, global_vars):
     return text
 
 def process_sheet(sheet_name, template_path, output_folder, global_vars):
+    # 将模板路径转换为基于项目目录的绝对路径
+    absolute_template_path = os.path.join(BASE_DIR, template_path)
+
+    # 验证模板存在
+    if not os.path.isfile(absolute_template_path):
+        raise FileNotFoundError(f"⚠️ 模板文件不存在：{absolute_template_path}")
+    
     """处理单个Sheet的核心逻辑"""
     # 读取模板
     try:
-        with open(template_path, 'r', encoding='utf-8') as f:
+        with open(absolute_template_path, 'r', encoding='utf-8') as f:
             template = f.read()
     except FileNotFoundError:
-        print(f"⚠️ 模板文件不存在：{template_path}，跳过处理Sheet [{sheet_name}]")
+        print(f"⚠️ 模板文件不存在：{absolute_template_path}，跳过处理Sheet [{sheet_name}]")
         return
 
     # 创建输出目录
@@ -87,16 +111,16 @@ def process_sheet(sheet_name, template_path, output_folder, global_vars):
     print(f"✅ Sheet [{sheet_name}] 处理完成，生成 {total_files} 个文件 → {output_folder}")
 
 # 主流程
+print(f"当前工作目录：{os.getcwd()}")
+print(f"配置文件路径：{config_excel_path}")
 print("=== 请选择数据文件 ===")
 data_excel_path = get_data_file_gui()
 
 if not data_excel_path:  # 用户取消选择
-    print("错误：未选择数据文件，程序终止")
-    exit()
+    graceful_exit("❌ 错误：未选择数据文件")
 
 if not os.path.isfile(data_excel_path):
-    print(f"错误：文件 {data_excel_path} 不存在")
-    exit()
+    graceful_exit(f"❌ 错误：文件 {data_excel_path} 不存在")
 
 global_vars = load_global_vars()  # 提前加载全局变量
 config_df = pd.read_excel(config_excel_path)  # 读取配置文件
@@ -112,4 +136,4 @@ for _, config_row in config_df.iterrows():
     print(f"\n🔄 开始处理 Sheet: {sheet_name}")
     process_sheet(sheet_name, template_path, output_folder, global_vars)
 
-print("\n所有任务完成！")
+graceful_exit("✅ 所有任务已完成！")
