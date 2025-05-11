@@ -30,8 +30,8 @@
 
 </div>
 
-
-
+## 怎么下载
+[最新版本下载](https://github.com/Hirayama114514/RMA-Ryumi_Autottk/releases) 
 
 ## 功能列表
 
