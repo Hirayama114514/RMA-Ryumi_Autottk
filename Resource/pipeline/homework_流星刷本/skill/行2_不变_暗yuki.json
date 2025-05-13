@@ -1,0 +1,30 @@
+{
+    "流星刷本_寻找不变暗yuki": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "inverse": true,
+        "template": "开始行动.png",
+        "next": [
+            "流星刷本_点击不变暗yuki"
+        ],
+        "interrupt": [
+            "下滑战斗中技能栏"
+        ]
+    },
+    "流星刷本_点击不变暗yuki": {
+        "recognition": "OCR",
+        "expected": [
+            "不变"
+        ],
+        "roi":[80,100,1170,400],
+        "action": "Click",
+        "rate_limit":0,
+        "timeout":300000,
+        "next":["流星刷本_选择暗yuki","流星刷本_选择暗yukib"]
+    }
+}

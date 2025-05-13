@@ -1,0 +1,31 @@
+{
+    "流星刷本_寻找10":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "inverse": true,
+        "template": "开始行动.png",
+        "next":["流星刷本_点击10"]
+    },
+    "流星刷本_点击10":{
+        "action":"Click",
+        "target":[100,400,110,60],
+        "next":["流星刷本_选择0"]
+    },
+    "流星刷本_寻找20":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "action":"Click",
+        "target":[215,30,75,15]
+    }
+}

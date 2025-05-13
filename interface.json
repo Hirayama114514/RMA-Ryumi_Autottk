@@ -1,6 +1,6 @@
 {
     "name":"RMA",
-    "version":"1.100",
+    "version":"1.200",
     "url":null,
     "custom_title":"无法无天的瑠実",
     "default_controller": "adb",
@@ -50,7 +50,13 @@
         {
             "name":"代理作战",
             "entry":"进入战斗",
-            "advanced": ["作业名称"]
+            "advanced": ["作业名称"],
+        },
+        {
+            "name":"代理刷本",
+            "entry":"周回副本_选择票券",
+            "advanced": ["作业名称"],
+            "option":["重复刷取"]
         },
         {
             "name":"技术模拟战刷奖励",
@@ -73,6 +79,21 @@
         }
     },
     "option": {
+        "重复刷取":{
+            "cases":[
+                {
+                    "name":"不重复刷"
+                },
+                {
+                    "name":"要重复刷",
+                    "pipeline_override":{
+                        "胜利轮进入回合":{
+                            "next":["周回副本_战斗奖励"]
+                        }
+                    }
+                }
+            ]
+        },
         "异时层强敌":{
             "cases":[
                 {

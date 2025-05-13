@@ -2,8 +2,76 @@
     "周回副本_战斗奖励":{
         "recognition":"TemplateMatch",
         "template":"周回副本_战斗奖励.png",
+        "threshold": 0.9,
         "roi":[0,0,400,150],
-        "next":["进入战斗成功"],
-        "interrupt":["跳过人生","等待加载"]
+        "next":["周回副本_再次挑战"],
+        "interrupt":["周回副本_收取奖励"]
+    },
+    "周回副本_收取奖励":{
+        "action":"Click",
+        "target":[1200,300,60,60]
+    },
+    "周回副本_再次挑战":{
+        "recognition":"TemplateMatch",
+        "template":"周回副本_再次挑战.png",
+        "threshold": 0.9,
+        "action":"Click",
+        "post_delay":500,
+        "next":["周回副本_选择票券"]
+    },
+    "周回副本_选择体力":{
+        "recognition":"OCR",
+        "expected":"不足",
+        "roi":[580,485,125,40],
+        "threshold": 0.9,
+        "action":"Click",
+        "target":[770,270,30,30],
+        "next":["周回副本_体力4"],
+        "interrupt":["周回副本_增加体力"]
+    },
+    "周回副本_体力4":{
+        "recognition":"OCR",
+        "expected":"4",
+        "roi":[680,400,60,40],
+        "threshold": 0.9,
+        "action":"Click",
+        "target":[770,570,30,30],
+        "post_delay":500,
+        "next":["周回副本_消耗体力石","进入战斗"]
+    },
+    "周回副本_增加体力":{
+        "action":"Click",
+        "target":[775,400,20,20]
+    },
+    "周回副本_消耗体力石":{
+        "recognition":"TemplateMatch",
+        "template":"周回副本_消耗体力石.png",
+        "threshold":0.9,
+        "action":"Click",
+        "next":["周回副本_体力已回复"]
+    },
+    "周回副本_体力已回复":{
+        "recognition":"TemplateMatch",
+        "template":"周回副本_体力已回复_OK.png",
+        "threshold":0.9,
+        "action":"Click",
+        "post_delay":500,
+        "next":["周回副本_最终OK"]
+    },
+    "周回副本_选择票券":{
+        "action":"Click",
+        "target":[480,270,30,30],
+        "next":["周回副本_选择体力","周回副本_最大票券"]
+    },
+    "周回副本_最大票券":{
+        "action":"Click",
+        "target":[850,400,25,25],
+        "next":["周回副本_最终OK"]
+    },
+    "周回副本_最终OK":{
+        "recognition":"TemplateMatch",
+        "template":"周回副本_OK.png",
+        "action":"Click",
+        "next":["进入战斗"]
     }
 }
