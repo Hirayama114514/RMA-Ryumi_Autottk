@@ -1,0 +1,97 @@
+{
+  "ColorTheme": {
+    "DisplayName": "Blue",
+    "Primary": {
+      "A": 255,
+      "R": 10,
+      "G": 89,
+      "B": 247
+    },
+    "PrimaryBrush": "#ff0a59f7",
+    "PrimaryDark": {
+      "A": 255,
+      "R": 5,
+      "G": 44,
+      "B": 123
+    },
+    "PrimaryDarkBrush": "#ff052c7b",
+    "Accent": {
+      "A": 255,
+      "R": 247,
+      "G": 168,
+      "B": 10
+    },
+    "AccentBrush": "#fff7a80a",
+    "AccentDark": {
+      "A": 255,
+      "R": 123,
+      "G": 84,
+      "B": 5
+    },
+    "AccentDarkBrush": "#ff7b5405"
+  },
+  "BaseTheme": "Light",
+  "CurrentLanguage": "zh-hans",
+  "Resource": "B 服",
+  "TaskItems": [
+    {
+      "name": "启动游戏",
+      "entry": "登录_app启动",
+      "check": false
+    },
+    {
+      "name": "挑战异时层",
+      "entry": "挑战异时层",
+      "check": false,
+      "option": [
+        {
+          "name": "异时层强敌",
+          "index": 0
+        },
+        {
+          "name": "练习模式",
+          "index": 0
+        },
+        {
+          "name": "使用票数",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "name": "挑战高分挑战",
+      "entry": "高分挑战",
+      "check": false
+    },
+    {
+      "name": "挑战钟楼",
+      "entry": "挑战钟楼",
+      "check": false
+    },
+    {
+      "name": "代理作战",
+      "entry": "进入战斗",
+      "check": false,
+      "advanced": [
+        {
+          "data": {},
+          "name": "作业名称"
+        }
+      ]
+    },
+    {
+      "name": "技术模拟战刷奖励",
+      "entry": "技术模拟战_刷分开始",
+      "check": false,
+      "option": [
+        {
+          "name": "刷分关卡",
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "EnableEdit": false,
+  "UI.MainWindow.Width": "1152",
+  "UI.MainWindow.Height": "671.5"
+}
