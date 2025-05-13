@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD033 MD041 -->
 <div align="center">
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Hirayama114514/RMA-Ryumi_Autottk/Assets/logo.png" 
+  <img src="https://raw.githubusercontent.com/Hirayama114514/RMA-Ryumi_Autottk/main/Assets/logo.png" 
        alt="我的LOGO" 
        width="256" 
        height="256" />
