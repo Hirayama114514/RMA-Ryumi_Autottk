@@ -1,0 +1,9 @@
+{
+    "周回副本_战斗奖励":{
+        "recognition":"TemplateMatch",
+        "template":"周回副本_战斗奖励.png",
+        "roi":[0,0,400,150],
+        "next":["进入战斗成功"],
+        "interrupt":["跳过人生","等待加载"]
+    }
+}
