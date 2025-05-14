@@ -37,7 +37,7 @@
         "action":"Click",
         "target":[770,570,30,30],
         "post_delay":500,
-        "next":["周回副本_消耗体力石","进入战斗"]
+        "next":["周回副本_消耗体力石","周回副本_选择队伍"]
     },
     "周回副本_增加体力":{
         "action":"Click",
@@ -45,7 +45,8 @@
     },
     "周回副本_消耗体力石":{
         "recognition":"TemplateMatch",
-        "template":"周回副本_消耗体力石.png",
+        "template":["周回副本_消耗体力石.png","周回副本_消耗体力石2.png"],
+        "roi":[600,540,575,200],
         "threshold":0.9,
         "action":"Click",
         "next":["周回副本_体力已回复"]
@@ -71,6 +72,16 @@
     "周回副本_最终OK":{
         "recognition":"TemplateMatch",
         "template":"周回副本_OK.png",
+        "action":"Click",
+        "post_delay":2000,
+        "next":["周回副本_选择队伍"]
+    },
+    "周回副本_选择队伍":{
+        "next":["周回副本_出击","进入战斗"]
+    },
+    "周回副本_出击":{
+        "recognition":"TemplateMatch",
+        "template":"周回副本_出击.png",
         "action":"Click",
         "next":["进入战斗"]
     }
