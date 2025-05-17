@@ -319,9 +319,14 @@
         "next":["@@作业名称@@_@@下一轮@@轮_进入回合"]
     },
     "@@作业名称@@_@@行动轮@@轮_后置od已开启":{
-        "recognition":"TemplateMatch",
-        "roi":[1120,0,120,120],
-        "template":["0od.png"],
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
         "pre_delay":0,
         "post_delay":0,
         "next":["@@作业名称@@_@@下一轮@@轮_进入回合"]
