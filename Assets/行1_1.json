@@ -1,0 +1,602 @@
+{
+    "@@作业名称@@_t@@行动轮@@_post-od":{
+        "inverse":true,
+        "recognition": "TemplateMatch",
+        "roi": [1070,490,200,200],
+        "template": "开始行动.png",
+        "threshold": 0.9,
+        "rate_limit":0,
+        "pre_delay":0,
+        "post_delay":0,
+        "next":[
+            "@@作业名称@@_t@@行动轮@@_post-od-no",
+            "@@作业名称@@_t@@行动轮@@_post-od-yes"
+        ],
+        "interrupt":["open-od"]
+    },
+    "@@作业名称@@_t@@行动轮@@_post-od-yes":{
+        "recognition": "TemplateMatch",
+        "roi": [50,15,50,50],
+        "template": "通常战斗_逃跑.png",
+        "threshold": 0.9,
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t@@行动轮@@_t-start-开始行动"]
+    },
+    "@@作业名称@@_t@@行动轮@@_post-od-no":{
+        "enable":@@反后置od@@,
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t@@行动轮@@_t-start-退出键"],
+        "interrupt":["跳过人生","wait"]
+    },
+    "@@作业名称@@_t@@行动轮@@_t-start-退出键":{
+        "recognition": "TemplateMatch",
+        "roi": [50,15,50,50],
+        "template": "通常战斗_逃跑.png",
+        "threshold": 0.9,
+        "rate_limit":0,
+        "pre_delay":0,
+        "post_delay":0,
+        "next":["@@作业名称@@_t@@行动轮@@_t-start-开始行动"]
+    },
+    "@@作业名称@@_t@@行动轮@@_t-start-开始行动":{
+        "recognition": "TemplateMatch",
+        "roi": [1070,490,200,200],
+        "template": "开始行动.png",
+        "threshold": 0.9,
+        "rate_limit":0,
+        "pre_delay":0,
+        "post_delay":0,
+        "next":["@@作业名称@@_t@@行动轮@@_pre-od-no","@@作业名称@@_t@@行动轮@@_pre-od-yes"],
+        "interrupt":["open-od"]
+    },
+    "@@作业名称@@_t@@行动轮@@_pre-od-no":{
+        "enable":@@反前置od@@,
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t@@行动轮@@_swap"]
+    },
+    "@@作业名称@@_t@@行动轮@@_pre-od-yes":{
+        "inverse":true,
+        "recognition": "TemplateMatch",
+        "roi": [50,15,50,50],
+        "template": "通常战斗_逃跑.png",
+        "threshold": 0.9,
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t@@行动轮@@_swap"]
+    },
+    "@@作业名称@@_t@@行动轮@@_swap": {
+        "recognition":"TemplateMatch",
+        "roi":[1,1,100,70],
+        "template":"通常战斗_逃跑.png",
+        "threshold":0.9,
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":[
+            "@@作业名称@@_t@@行动轮@@_pre-swap_1",
+            "@@作业名称@@_t@@行动轮@@_pre-swap_2",
+            "@@作业名称@@_t@@行动轮@@_pre-swap_3",
+            "@@作业名称@@_t@@行动轮@@_reset"
+        ]
+    },
+    "@@作业名称@@_t@@行动轮@@_pre-swap_1": {
+        "enable":@@换1@@,
+        "recognition":"TemplateMatch",
+        "roi":[1,1,100,70],
+        "template":"通常战斗_逃跑.png",
+        "threshold":0.9,
+        "action": "Click",
+        "target": [100,600,30,30],
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t@@行动轮@@_post-swap_1"]
+    },
+    "@@作业名称@@_t@@行动轮@@_post-swap_1": {
+        "recognition":"ColorMatch",
+        "roi":[295,37,150,5],
+        "lower":[203,206,207],
+        "upper":[205,208,209],
+        "order_by":"Score",
+        "count":130,
+        "action": "Click",
+        "target": [@@来源坐标1@@,30,30],
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":[
+            "@@作业名称@@_t@@行动轮@@_pre-swap_2",
+            "@@作业名称@@_t@@行动轮@@_pre-swap_3",
+            "@@作业名称@@_t@@行动轮@@_reset"
+        ]
+    },
+    "@@作业名称@@_t@@行动轮@@_pre-swap_2": {
+        "enable":@@换2@@,
+        "recognition":"TemplateMatch",
+        "roi":[1,1,100,70],
+        "template":"通常战斗_逃跑.png",
+        "threshold":0.9,
+        "action": "Click",
+        "target": [290,600,30,30],
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t@@行动轮@@_post-swap_2"]
+    },
+    "@@作业名称@@_t@@行动轮@@_post-swap_2": {
+        "recognition":"ColorMatch",
+        "roi":[295,37,150,5],
+        "lower":[203,206,207],
+        "upper":[205,208,209],
+        "order_by":"Score",
+        "count":130,
+        "action": "Click",
+        "target": [@@来源坐标2@@,30,30],
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":[
+            "@@作业名称@@_t@@行动轮@@_pre-swap_3",
+            "@@作业名称@@_t@@行动轮@@_reset"
+        ]
+    },
+    "@@作业名称@@_t@@行动轮@@_pre-swap_3": {
+        "enable":@@换3@@,
+        "recognition":"TemplateMatch",
+        "roi":[1,1,100,70],
+        "template":"通常战斗_逃跑.png",
+        "threshold":0.9,
+        "action": "Click",
+        "target": [480,600,30,30],
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t@@行动轮@@_post-swap_3"]
+    },
+    "@@作业名称@@_t@@行动轮@@_post-swap_3": {
+        "recognition":"ColorMatch",
+        "roi":[295,37,150,5],
+        "lower":[203,206,207],
+        "upper":[205,208,209],
+        "order_by":"Score",
+        "count":130,
+        "action": "Click",
+        "target": [@@来源坐标3@@,30,30],
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":[
+            "@@作业名称@@_t@@行动轮@@_reset"
+        ]
+    },
+    "@@作业名称@@_t@@行动轮@@_reset":{
+        "recognition":"TemplateMatch",
+        "roi":[1,1,100,70],
+        "template":"通常战斗_逃跑.png",
+        "threshold":0.9,
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":[
+            "@@作业名称@@_t@@行动轮@@_pre-reset_1",
+            "@@作业名称@@_t@@行动轮@@_pre-reset_2",
+            "@@作业名称@@_t@@行动轮@@_pre-reset_3",
+            "@@作业名称@@_t@@行动轮@@_skill"
+        ]
+    },
+    "@@作业名称@@_t@@行动轮@@_pre-reset_1": {
+        "enable":@@复原1@@,
+        "recognition":"TemplateMatch",
+        "roi":[1,1,100,70],
+        "template":"通常战斗_逃跑.png",
+        "threshold":0.9,
+        "action": "Click",
+        "target": [100,600,30,30],
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t@@行动轮@@_post-reset_1"]
+    },
+    "@@作业名称@@_t@@行动轮@@_post-reset_1": {
+        "recognition":"ColorMatch",
+        "roi":[295,37,150,5],
+        "lower":[203,206,207],
+        "upper":[205,208,209],
+        "order_by":"Score",
+        "count":130,
+        "action": "Click",
+        "target": [150,420,10,10],
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":[
+            "@@作业名称@@_t@@行动轮@@_pre-reset_2",
+            "@@作业名称@@_t@@行动轮@@_pre-reset_3",
+            "@@作业名称@@_t@@行动轮@@_skill"
+        ]
+    },
+    "@@作业名称@@_t@@行动轮@@_pre-reset_2": {
+        "enable":@@复原2@@,
+        "recognition":"TemplateMatch",
+        "roi":[1,1,100,70],
+        "template":"通常战斗_逃跑.png",
+        "threshold":0.9,
+        "action": "Click",
+        "target": [290,600,30,30],
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t@@行动轮@@_post-reset_2"]
+    },
+    "@@作业名称@@_t@@行动轮@@_post-reset_2": {
+        "recognition":"ColorMatch",
+        "roi":[295,37,150,5],
+        "lower":[203,206,207],
+        "upper":[205,208,209],
+        "order_by":"Score",
+        "count":130,
+        "action": "Click",
+        "target": [150,420,10,10],
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":[
+            "@@作业名称@@_t@@行动轮@@_pre-reset_3",
+            "@@作业名称@@_t@@行动轮@@_skill"
+        ]
+    },
+    "@@作业名称@@_t@@行动轮@@_pre-reset_3": {
+        "enable":@@复原3@@,
+        "recognition":"TemplateMatch",
+        "roi":[1,1,100,70],
+        "template":"通常战斗_逃跑.png",
+        "threshold":0.9,
+        "action": "Click",
+        "target": [480,600,30,30],
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t@@行动轮@@_post-reset_3"]
+    },
+    "@@作业名称@@_t@@行动轮@@_post-reset_3": {
+        "recognition":"ColorMatch",
+        "roi":[295,37,150,5],
+        "lower":[203,206,207],
+        "upper":[205,208,209],
+        "order_by":"Score",
+        "count":130,
+        "action": "Click",
+        "target": [150,420,10,10],
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":[
+            "@@作业名称@@_t@@行动轮@@_skill"
+        ]
+    },
+    "@@作业名称@@_t@@行动轮@@_skill":{
+        "recognition":"TemplateMatch",
+        "roi":[1,1,100,70],
+        "template":"通常战斗_逃跑.png",
+        "threshold":0.9,
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":[
+            "@@作业名称@@_t@@行动轮@@_expand-skill_1"
+        ]
+    },
+
+    "@@作业名称@@_t@@行动轮@@_expand-skill_1": {
+        "recognition":"TemplateMatch",
+        "roi":[1,1,100,70],
+        "template":"通常战斗_逃跑.png",
+        "threshold":0.9,
+        "action": "Click",
+        "target": [100,600,30,30],
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t@@行动轮@@_expand-skill-check_1"]
+    },
+    "@@作业名称@@_t@@行动轮@@_expand-skill-check_1": {
+        "recognition":"ColorMatch",
+        "roi":[295,37,150,5],
+        "lower":[203,206,207],
+        "upper":[205,208,209],
+        "order_by":"Score",
+        "count":130,
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":[
+            "@@作业名称@@_t@@行动轮@@_swipe-skill_1",
+            "@@作业名称@@_t@@行动轮@@_shift-skill_1",
+            "@@作业名称@@_t@@行动轮@@_click-skill_1"
+        ]
+    },
+    "@@作业名称@@_t@@行动轮@@_swipe-skill_1": {
+        "enable":@@滑动1@@,
+        "action": "Swipe",
+        "begin": [1060,490,1,1],
+        "end": [1060,0,1,1],
+        "duration":200,
+        "pre_delay":0,
+        "post_delay":800,
+        "rate_limit":0,
+        "next":[
+            "@@作业名称@@_t@@行动轮@@_shift-skill_1",
+            "@@作业名称@@_t@@行动轮@@_click-skill_1"
+        ]
+    },
+    "@@作业名称@@_t@@行动轮@@_shift-skill_1": {
+        "enable":@@切技能1@@,
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t@@行动轮@@_shift-skill-ok_1"],
+        "interrupt":["@@作业名称@@_t@@行动轮@@_shift-skill-yes_1"]
+    },
+    "@@作业名称@@_t@@行动轮@@_shift-skill-yes_1": {
+        "action": "Click",
+        "target":[@@技能坐标1@@,1,1],
+        "target_offset":[685,33,0,0],
+        "pre_delay":0,
+        "post_delay":800,
+        "rate_limit":0
+    },
+    "@@作业名称@@_t@@行动轮@@_shift-skill-ok_1":{
+        "recognition":"OCR",
+        "expected":"@@技能1@@",
+        "roi":[380,115,800,350],
+        "threshold":0.8,
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t@@行动轮@@_click-skill_1"]
+    },
+    "@@作业名称@@_t@@行动轮@@_click-skill_1": {
+        "action": "Click",
+        "target": [@@技能坐标1@@,1,1],
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t@@行动轮@@_target-skill_1"],
+        "timeout":5000,
+        "on_error":["@@作业名称@@_异常_费用不足"]
+    },
+    "@@作业名称@@_t@@行动轮@@_target-skill_1":{
+        "recognition":"TemplateMatch",
+        "roi":[1,1,100,70],
+        "template":"通常战斗_逃跑.png",
+        "threshold":0.9,
+        "next":[
+            "@@作业名称@@_t@@行动轮@@_target-skill-yes_1",
+            "@@作业名称@@_t@@行动轮@@_expand-skill_2"
+        ]
+    },
+    "@@作业名称@@_t@@行动轮@@_target-skill-yes_1": {
+        "enable":@@选目标1@@,
+        "action": "Click",
+        "target": [@@目标坐标1@@,20,20],
+        "pre_delay":0,
+        "post_delay":800,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t@@行动轮@@_expand-skill_2"]
+    },   
+    "@@作业名称@@_t@@行动轮@@_expand-skill_2": {
+        "recognition":"TemplateMatch",
+        "roi":[1,1,100,70],
+        "template":"通常战斗_逃跑.png",
+        "threshold":0.9,
+        "action": "Click",
+        "target": [290,600,30,30],
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t@@行动轮@@_expand-skill-check_2"]
+    },
+    "@@作业名称@@_t@@行动轮@@_expand-skill-check_2": {
+        "recognition":"ColorMatch",
+        "roi":[295,37,150,5],
+        "lower":[203,206,207],
+        "upper":[205,208,209],
+        "order_by":"Score",
+        "count":130,
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":[
+            "@@作业名称@@_t@@行动轮@@_swipe-skill_2",
+            "@@作业名称@@_t@@行动轮@@_shift-skill_2",
+            "@@作业名称@@_t@@行动轮@@_click-skill_2"
+        ]
+    },
+    "@@作业名称@@_t@@行动轮@@_swipe-skill_2": {
+        "enable":@@滑动2@@,
+        "action": "Swipe",
+        "begin": [1060,490,1,1],
+        "end": [1060,0,1,1],
+        "duration":200,
+        "pre_delay":0,
+        "post_delay":800,
+        "rate_limit":0,
+        "next":[
+            "@@作业名称@@_t@@行动轮@@_shift-skill_2",
+            "@@作业名称@@_t@@行动轮@@_click-skill_2"
+        ]
+    },
+    "@@作业名称@@_t@@行动轮@@_shift-skill_2": {
+        "enable":@@切技能2@@,
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t@@行动轮@@_shift-skill-ok_2"],
+        "interrupt":["@@作业名称@@_t@@行动轮@@_shift-skill-yes_2"]
+    },
+    "@@作业名称@@_t@@行动轮@@_shift-skill-yes_2": {
+        "action": "Click",
+        "target":[@@技能坐标2@@,1,1],
+        "target_offset":[685,33,0,0],
+        "pre_delay":0,
+        "post_delay":800,
+        "rate_limit":0
+    },
+    "@@作业名称@@_t@@行动轮@@_shift-skill-ok_2":{
+        "recognition":"OCR",
+        "expected":"@@技能2@@",
+        "roi":[380,115,800,350],
+        "threshold":0.8,
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t@@行动轮@@_click-skill_2"]
+    },
+    "@@作业名称@@_t@@行动轮@@_click-skill_2": {
+        "action": "Click",
+        "target": [@@技能坐标2@@,1,1],
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t@@行动轮@@_target-skill_2"],
+        "timeout":5000,
+        "on_error":["@@作业名称@@_异常_费用不足"]
+    },
+    "@@作业名称@@_t@@行动轮@@_target-skill_2":{
+        "recognition":"TemplateMatch",
+        "roi":[1,1,100,70],
+        "template":"通常战斗_逃跑.png",
+        "threshold":0.9,
+        "next":[
+            "@@作业名称@@_t@@行动轮@@_target-skill-yes_2",
+            "@@作业名称@@_t@@行动轮@@_expand-skill_3"
+        ]
+    },
+    "@@作业名称@@_t@@行动轮@@_target-skill-yes_2": {
+        "enable":@@选目标2@@,
+        "action": "Click",
+        "target": [@@目标坐标2@@,20,20],
+        "pre_delay":0,
+        "post_delay":800,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t@@行动轮@@_expand-skill_3"]
+    },
+
+        "@@作业名称@@_t@@行动轮@@_expand-skill_3": {
+        "recognition":"TemplateMatch",
+        "roi":[1,1,100,70],
+        "template":"通常战斗_逃跑.png",
+        "threshold":0.9,
+        "action": "Click",
+        "target": [480,600,30,30],
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t@@行动轮@@_expand-skill-check_3"]
+    },
+    "@@作业名称@@_t@@行动轮@@_expand-skill-check_3": {
+        "recognition":"ColorMatch",
+        "roi":[295,37,150,5],
+        "lower":[203,206,207],
+        "upper":[205,208,209],
+        "order_by":"Score",
+        "count":130,
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":[
+            "@@作业名称@@_t@@行动轮@@_swipe-skill_3",
+            "@@作业名称@@_t@@行动轮@@_shift-skill_3",
+            "@@作业名称@@_t@@行动轮@@_click-skill_3"
+        ]
+    },
+    "@@作业名称@@_t@@行动轮@@_swipe-skill_3": {
+        "enable":@@滑动3@@,
+        "action": "Swipe",
+        "begin": [1060,490,1,1],
+        "end": [1060,0,1,1],
+        "duration":200,
+        "pre_delay":0,
+        "post_delay":800,
+        "rate_limit":0,
+        "next":[
+            "@@作业名称@@_t@@行动轮@@_shift-skill_3",
+            "@@作业名称@@_t@@行动轮@@_click-skill_3"
+        ]
+    },
+    "@@作业名称@@_t@@行动轮@@_shift-skill_3": {
+        "enable":@@切技能3@@,
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t@@行动轮@@_shift-skill-ok_3"],
+        "interrupt":["@@作业名称@@_t@@行动轮@@_shift-skill-yes_3"]
+    },
+    "@@作业名称@@_t@@行动轮@@_shift-skill-yes_3": {
+        "action": "Click",
+        "target":[@@技能坐标3@@,1,1],
+        "target_offset":[685,33,0,0],
+        "pre_delay":0,
+        "post_delay":800,
+        "rate_limit":0
+    },
+    "@@作业名称@@_t@@行动轮@@_shift-skill-ok_3":{
+        "recognition":"OCR",
+        "expected":"@@技能3@@",
+        "roi":[380,115,800,350],
+        "threshold":0.8,
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t@@行动轮@@_click-skill_3"]
+    },
+    "@@作业名称@@_t@@行动轮@@_click-skill_3": {
+        "action": "Click",
+        "target": [@@技能坐标3@@,1,1],
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t@@行动轮@@_target-skill_3"],
+        "timeout":5000,
+        "on_error":["@@作业名称@@_异常_费用不足"]
+    },
+    "@@作业名称@@_t@@行动轮@@_target-skill_3":{
+        "recognition":"TemplateMatch",
+        "roi":[1,1,100,70],
+        "template":"通常战斗_逃跑.png",
+        "threshold":0.9,
+        "next":[
+            "@@作业名称@@_t@@行动轮@@_target-skill-yes_3",
+            "@@作业名称@@_t@@行动轮@@_start-action"
+        ]
+    },
+    "@@作业名称@@_t@@行动轮@@_target-skill-yes_3": {
+        "enable":@@选目标3@@,
+        "action": "Click",
+        "target": [@@目标坐标3@@,20,20],
+        "pre_delay":0,
+        "post_delay":800,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t@@行动轮@@_start-action"]
+    },
+
+    "@@作业名称@@_t@@行动轮@@_start-action": {
+        "recognition":"TemplateMatch",
+        "roi":[1,1,100,70],
+        "template":"通常战斗_逃跑.png",
+        "threshold": 0.9,
+        "action": "Click",
+        "target": [1150,550,50,50],
+        "pre_delay":0,
+        "post_delay":2000,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t@@下一轮@@_post-od"]
+    }
+}

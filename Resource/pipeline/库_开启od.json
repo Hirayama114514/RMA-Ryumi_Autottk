@@ -7,5 +7,12 @@
         "rate_limit":0,
         "action": "Click",
         "target":[1160,40,50,40]
+    },
+    "open-od": {
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "action": "Click",
+        "target":[1160,40,50,40]
     }
 }

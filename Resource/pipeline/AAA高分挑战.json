@@ -1,14 +1,15 @@
 {
     "高分挑战": {
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
         "next": [
             "高分挑战出击"
         ],
         "interrupt": [
             "高分挑战挑战",
             "高分挑战点击叹号",
-            "高分挑战开始",
-            "打开高分挑战",
-            "高分挑战打开强化/养成"
+            "等待加载"
         ]
     },
     "高分挑战出击": {
@@ -16,39 +17,28 @@
         "template": "高分挑战_出击.png",
         "threshold": 0.9,
         "action": "Click",
-        "post_delay": 500
+        "pre_delay":0,
+        "post_delay":500,
+        "rate_limit":0,
+        "next":["进入战斗"]
     },
     "高分挑战挑战": {
         "recognition": "TemplateMatch",
         "template": "高分挑战_挑战.png",
         "threshold": 0.9,
         "action": "Click",
-        "post_delay": 500
+        "pre_delay":0,
+        "post_delay":500,
+        "rate_limit":0
     },
     "高分挑战点击叹号": {
-        "recognition": "TemplateMatch",
-        "template":"交互叹号.png",
-        "threshold": 0.9,
-        "action": "Click",
-        "post_delay": 500
-    },
-    "高分挑战开始": {
-        "recognition": "TemplateMatch",
-        "template": "高分挑战_开始.png",
-        "threshold": 0.9,
-        "action": "Click",
-        "post_delay": 500
-    },
-    "打开高分挑战": {
-        "recognition": "OCR",
-        "expected": "高分挑战",
-        "action": "Click",
-        "post_delay": 500
-    },
-    "高分挑战打开强化/养成": {
-        "recognition": "OCR",
-        "expected": "强化/养成",
-        "action": "Click",
-        "post_delay": 500
+        "recognition":"TemplateMatch",
+        "template":"高分挑战_主页.png",
+        "threshold":0.8,
+        "action":"Click",
+        "target":[650,250,1,1],
+        "pre_delay":0,
+        "post_delay":2000,
+        "rate_limit":0
     }
 }

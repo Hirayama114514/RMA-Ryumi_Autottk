@@ -1,0 +1,37 @@
+{
+    "@@作业名称@@_寻找10":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "inverse": true,
+        "template": "开始行动.png",
+        "pre_delay":0,
+        "post_delay":200,
+        "rate_limit":0,
+        "next":["@@作业名称@@_点击10"]
+    },
+    "@@作业名称@@_点击10":{
+        "action":"Click",
+        "target":[100,400,110,60],
+        "pre_delay":0,
+        "post_delay":200,
+        "rate_limit":0
+    },
+    "@@作业名称@@_寻找20":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0
+    }
+}

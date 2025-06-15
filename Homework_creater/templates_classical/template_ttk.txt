@@ -1,0 +1,351 @@
+{
+    "@@作业名称@@_@@行动轮@@轮_进入回合":{
+        "rate_limit":0,
+        "pre_delay":0,
+        "post_delay":0,
+        "next":["@@作业名称@@_@@行动轮@@轮_进入回合2"],
+        "interrupt":[
+            "@@作业名称@@_@@行动轮@@轮_切换队伍",
+            "跳过人生",
+            "等待加载"
+        ]
+    },
+    "@@作业名称@@_@@行动轮@@轮_进入回合2":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "rate_limit":0,
+        "pre_delay":0,
+        "post_delay":1500,
+        "next":["@@作业名称@@_@@行动轮@@轮_前置od"],
+        "interrupt":[
+            "@@作业名称@@_@@行动轮@@轮_切换队伍",
+            "跳过人生",
+            "等待加载"
+        ]
+    },
+    "@@作业名称@@_@@行动轮@@轮_切换队伍":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            0,
+            0,
+            120,
+            120
+        ],
+        "template": "异时层_切换队伍@@切换队伍@@.png",
+        "action":"Click",
+        "post_delay":500,
+        "next":["异时层切换队伍"]
+    },
+    "@@作业名称@@_@@行动轮@@轮_前置od":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":[
+            "@@作业名称@@_@@行动轮@@轮_前置od不开启",
+            "@@作业名称@@_@@行动轮@@轮_前置od已开启"
+            ],
+        "interrupt":[
+            "开启od"
+        ]
+    },
+    "@@作业名称@@_@@行动轮@@轮_前置od不开启":{
+        "inverse":@@前置od@@,
+        "pre_delay":0,
+        "post_delay":500,
+        "rate_limit":0,
+        "next":["@@作业名称@@_@@行动轮@@轮_1号角色落位检查"]
+    },
+    "@@作业名称@@_@@行动轮@@轮_前置od已开启":{
+        "recognition":"TemplateMatch",
+        "roi":[1120,0,120,120],
+        "template":["0od.png"],
+        "pre_delay":0,
+        "post_delay":4000,
+        "rate_limit":0,
+        "next":["@@作业名称@@_@@行动轮@@轮_1号角色落位检查"]
+    },
+    "@@作业名称@@_@@行动轮@@轮_1号角色落位检查":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "timeout":300000,
+        "next":["@@作业名称@@_@@行动轮@@轮_1号角色落位检查无误","@@作业名称@@_@@行动轮@@轮_1号角色落位检查无误b"],
+        "interrupt":[
+            "交换1",
+            "@@作业名称@@_选择@@角色1@@",
+            "@@作业名称@@_选择@@角色1@@b"
+        ]
+    },
+    "@@作业名称@@_@@行动轮@@轮_1号角色落位检查无误":{
+        "recognition":"TemplateMatch",
+        "template":["角色头像/@@角色1@@.png"],
+        "roi":[20,500,180,180],
+        "pre_delay":0,
+        "post_delay":200,
+        "rate_limit":0,
+        "next":["@@作业名称@@_@@行动轮@@轮_2号角色落位检查"]
+    },
+    "@@作业名称@@_@@行动轮@@轮_1号角色落位检查无误b":{
+        "recognition":"FeatureMatch",
+        "template":["角色头像/@@角色1@@b.png"],
+        "roi":[20,500,180,180],
+        "pre_delay":0,
+        "post_delay":200,
+        "rate_limit":0,
+        "next":["@@作业名称@@_@@行动轮@@轮_2号角色落位检查"]
+    },
+    "@@作业名称@@_@@行动轮@@轮_2号角色落位检查":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "timeout":300000,
+        "next":["@@作业名称@@_@@行动轮@@轮_2号角色落位检查无误","@@作业名称@@_@@行动轮@@轮_2号角色落位检查无误b"],
+        "interrupt":[
+            "交换2",
+            "@@作业名称@@_选择@@角色2@@",
+            "@@作业名称@@_选择@@角色2@@b"
+        ]
+    },
+    "@@作业名称@@_@@行动轮@@轮_2号角色落位检查无误":{
+        "recognition":"TemplateMatch",
+        "template":["角色头像/@@角色2@@.png"],
+        "roi":[210,500,180,180],
+        "pre_delay":0,
+        "post_delay":200,
+        "rate_limit":0,
+        "next":["@@作业名称@@_@@行动轮@@轮_3号角色落位检查"]
+    },
+    "@@作业名称@@_@@行动轮@@轮_2号角色落位检查无误b":{
+        "recognition":"FeatureMatch",
+        "template":["角色头像/@@角色2@@b.png"],
+        "roi":[210,500,180,180],
+        "pre_delay":0,
+        "post_delay":200,
+        "rate_limit":0,
+        "next":["@@作业名称@@_@@行动轮@@轮_3号角色落位检查"]
+    },
+    "@@作业名称@@_@@行动轮@@轮_3号角色落位检查":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "timeout":300000,
+        "next":["@@作业名称@@_@@行动轮@@轮_3号角色落位检查无误","@@作业名称@@_@@行动轮@@轮_3号角色落位检查无误b"],
+        "interrupt":[
+            "交换3",
+            "@@作业名称@@_选择@@角色3@@",
+            "@@作业名称@@_选择@@角色3@@b"
+        ]
+    },
+    "@@作业名称@@_@@行动轮@@轮_3号角色落位检查无误":{
+        "recognition":"TemplateMatch",
+        "template":["角色头像/@@角色3@@.png"],
+        "roi":[400,500,180,180],
+        "pre_delay":0,
+        "post_delay":200,
+        "rate_limit":0,
+        "next":["@@作业名称@@_@@行动轮@@轮_1号角色技能检查"]
+    },
+    "@@作业名称@@_@@行动轮@@轮_3号角色落位检查无误b":{
+        "recognition":"TemplateMatch",
+        "template":["角色头像/@@角色3@@b.png"],
+        "roi":[400,500,180,180],
+        "pre_delay":0,
+        "post_delay":200,
+        "rate_limit":0,
+        "next":["@@作业名称@@_@@行动轮@@轮_1号角色技能检查"]
+    },
+    "@@作业名称@@_@@行动轮@@轮_1号角色技能检查":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "action":"Click",
+        "target": [
+            100,
+            600,
+            30,
+            30
+        ],
+        "pre_delay":500,
+        "post_delay":500,
+        "rate_limit":0,
+        "next":[
+            "@@作业名称@@_@@行动轮@@轮_1号角色技能检查无误"
+        ],
+        "interrupt":[
+            "@@作业名称@@_寻找@@技能1@@@@目标1@@"
+    ]
+    },
+    "@@作业名称@@_@@行动轮@@轮_1号角色技能检查无误":{
+        "recognition":"OCR",
+        "expected":["NORMAL","FULL","自动","配置","ON"],
+        "roi":[270,0,300,130],
+        "inverse":true,
+        "pre_delay":0,
+        "post_delay":200,
+        "rate_limit":0,
+        "next":["@@作业名称@@_@@行动轮@@轮_2号角色技能检查"]
+    },
+    "@@作业名称@@_@@行动轮@@轮_2号角色技能检查":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "action":"Click",
+        "target": [
+            290,
+            600,
+            30,
+            30
+        ],
+        "pre_delay":500,
+        "post_delay":500,
+        "rate_limit":0,
+        "next":[
+            "@@作业名称@@_@@行动轮@@轮_2号角色技能检查无误"
+        ],
+        "interrupt":[
+            "@@作业名称@@_寻找@@技能2@@@@目标2@@"
+    ]
+    },
+    "@@作业名称@@_@@行动轮@@轮_2号角色技能检查无误":{
+        "recognition":"OCR",
+        "expected":["NORMAL","FULL","自动","配置","ON"],
+        "roi":[270,0,300,130],
+        "inverse":true,
+        "pre_delay":0,
+        "post_delay":200,
+        "rate_limit":0,
+        "next":["@@作业名称@@_@@行动轮@@轮_3号角色技能检查"]
+    },
+    "@@作业名称@@_@@行动轮@@轮_3号角色技能检查":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "action":"Click",
+        "target": [
+            480,
+            600,
+            30,
+            30
+        ],
+        "pre_delay":500,
+        "post_delay":500,
+        "rate_limit":0,
+        "next":[
+            "@@作业名称@@_@@行动轮@@轮_3号角色技能检查无误"
+        ],
+        "interrupt":[
+            "@@作业名称@@_寻找@@技能3@@@@目标3@@"
+    ]
+    },
+    "@@作业名称@@_@@行动轮@@轮_3号角色技能检查无误":{
+        "recognition":"OCR",
+        "expected":["NORMAL","FULL","自动","配置","ON"],
+        "roi":[270,0,300,130],
+        "inverse":true,
+        "pre_delay":0,
+        "post_delay":200,
+        "rate_limit":0,
+        "next":["@@作业名称@@_@@行动轮@@轮_行动开始"]
+    },
+    "@@作业名称@@_@@行动轮@@轮_行动开始":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "action":"Click",
+        "pre_delay":500,
+        "post_delay":2000,
+        "rate_limit":0,
+        "next":["@@作业名称@@_@@行动轮@@轮_后置od"]
+    },
+    "@@作业名称@@_@@行动轮@@轮_后置od":{
+        "pre_delay":0,
+        "post_delay":200,
+        "rate_limit":0,
+        "next":[
+            "@@作业名称@@_@@行动轮@@轮_后置od不开启",
+            "@@作业名称@@_@@行动轮@@轮_后置od已开启"
+            ],
+        "interrupt":[
+            "开启od"
+        ]
+    },
+    "@@作业名称@@_@@行动轮@@轮_后置od不开启":{
+        "inverse":@@后置od@@,
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@作业名称@@_@@下一轮@@轮_进入回合"]
+    },
+    "@@作业名称@@_@@行动轮@@轮_后置od已开启":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@作业名称@@_@@下一轮@@轮_进入回合"]
+    }
+}

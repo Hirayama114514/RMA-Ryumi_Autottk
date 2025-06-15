@@ -1,8 +1,8 @@
 {
     "name":"RMA",
-    "version":"1.200",
+    "version":"1.300",
     "url":null,
-    "custom_title":"无法无天的瑠実",
+    "custom_title":"无法无天的瑠実_威力加强版",
     "default_controller": "adb",
     "lock_controller":false,
     "controller":[
@@ -27,30 +27,9 @@
     ],
     "task": [
         {
-            "name": "启动游戏",
-            "entry": "登录_app启动"
-        },
-        {
-            "name":"挑战异时层",
-            "entry":"挑战异时层",
-            "option":[
-                "异时层强敌",
-                "练习模式",
-                "使用票数"
-            ]
-        },
-        {
-            "name":"挑战高分挑战",
-            "entry":"高分挑战"
-        },
-        {
-            "name":"挑战钟楼",
-            "entry":"挑战钟楼"
-        },
-        {
             "name":"代理作战",
             "entry":"进入战斗",
-            "advanced": ["作业名称"],
+            "advanced": ["作业名称"]
         },
         {
             "name":"代理刷本",
@@ -64,6 +43,10 @@
             "option":[
                 "刷分关卡"
             ]
+        },
+        {
+            "name":"速度测试",
+            "entry":"111"
         }
     ],
     "advanced": {
@@ -72,7 +55,7 @@
             "type":"string",
             "default":"请输入作业名称",
             "pipeline_override":{
-                "进入战斗成功":{
+                "进入战斗":{
                     "next":["{作业名称}_1轮_进入回合"]
                 }
             }

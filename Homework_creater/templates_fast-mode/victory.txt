@@ -1,0 +1,54 @@
+{
+    "@@作业名称@@_1轮_进入回合":{
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@作业名称@@_t1_t-start-退出键"],
+        "interrupt":["跳过人生","wait"]
+    },
+    "@@作业名称@@_t胜利_post-od":{
+        "next":["@@作业名称@@_逃跑_1"],
+        "timeout":300000,
+        "on_error":["作业完成"]
+    },
+    "@@作业名称@@_异常_费用不足":{
+        "action": "Click",
+        "target": [640,5,1,1],
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@作业名称@@_逃跑_1"]
+    },
+    "@@作业名称@@_异常_似了":{
+        "recognition":"TemplateMatch",
+        "template":"高分挑战_主页.png",
+        "threshold":0.8,
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next":["@@重凹类型@@"]
+    },
+    "@@作业名称@@_逃跑_1":{
+        "recognition":"TemplateMatch",
+        "roi": [50,15,50,50],
+        "template":"通常战斗_逃跑.png",
+        "threshold":0.9,
+        "action":"Click",
+        "target":[70,30,10,10],
+        "pre_delay":0,
+        "post_delay":1000,
+        "rate_limit":0,
+        "next":["@@作业名称@@_逃跑_2"]
+    },
+    "@@作业名称@@_逃跑_2":{
+        "recognition":"TemplateMatch",
+        "roi": [650,500,300,100],
+        "template":"通常战斗_逃跑_ok.png",
+        "threshold":0.9,
+        "action":"Click",
+        "pre_delay":0,
+        "post_delay":5000,
+        "rate_limit":0,
+        "next":["@@重凹类型@@"]
+    }
+}

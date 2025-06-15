@@ -1,0 +1,35 @@
+{
+    "@@作业名称@@_寻找@@技能@@@@目标@@": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "inverse": true,
+        "template": "开始行动.png",
+        "pre_delay":0,
+        "post_delay":0,
+        "rate_limit":0,
+        "next": [
+            "@@作业名称@@_点击@@技能@@@@目标@@"
+        ],
+        "interrupt": [
+            "下滑战斗中技能栏"
+        ]
+    },
+    "@@作业名称@@_点击@@技能@@@@目标@@": {
+        "recognition": "OCR",
+        "expected": [
+            "@@技能@@"
+        ],
+        "roi":[80,100,1170,400],
+        "action": "Click",
+        "pre_delay":0,
+        "post_delay":500,
+        "rate_limit":0,
+        "timeout":300000,
+        "next":["@@作业名称@@_选择@@目标@@","@@作业名称@@_选择@@目标@@b"]
+    }
+}

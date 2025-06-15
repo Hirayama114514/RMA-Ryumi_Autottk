@@ -1,0 +1,200 @@
+{
+    "111": {
+        "action": "Click",
+        "target": [100,600,30,30],
+        "pre_delay":0,
+        "post_delay":350,
+        "rate_limit":0,
+        "next":["444"]
+    },
+    "444": {
+        "action": "Click",
+        "target": [680,600,30,30],
+        "pre_delay":0,
+        "post_delay":350,
+        "rate_limit":0,
+        "next":["1111"]
+    },
+    "1111": {
+        "action": "Click",
+        "target": [100,600,30,30],
+        "pre_delay":0,
+        "post_delay":350,
+        "rate_limit":0,
+        "next":["1s"]
+    },
+    "1s": {
+        "action": "Click",
+        "target": [500,130,50,50],
+        "pre_delay":0,
+        "post_delay":350,
+        "rate_limit":0,
+        "next":["222"]
+    },
+    "222": {
+        "action": "Click",
+        "target": [290,600,30,30],
+        "pre_delay":0,
+        "post_delay":350,
+        "rate_limit":0,
+        "next":["555"]
+    },
+    "555": {
+        "action": "Click",
+        "target": [840,600,30,30],
+        "pre_delay":0,
+        "post_delay":350,
+        "rate_limit":0,
+        "next":["2222"]
+    },
+    "2222": {
+        "action": "Click",
+        "target": [290,600,30,30],
+        "pre_delay":0,
+        "post_delay":350,
+        "rate_limit":0,
+        "next":["2s"]
+    },
+    "2s": {
+        "action": "Click",
+        "target": [500,130,50,50],
+        "pre_delay":0,
+        "post_delay":350,
+        "rate_limit":0,
+        "next":["333"]
+    },
+    "333": {
+        "action": "Click",
+        "target": [480,600,30,30],
+        "pre_delay":0,
+        "post_delay":350,
+        "rate_limit":0,
+        "next":["666"]
+    },
+    "666": {
+        "action": "Click",
+        "target": [1000,600,30,30],
+        "pre_delay":0,
+        "post_delay":350,
+        "rate_limit":0,
+        "next":["3333"]
+    },
+    "3333": {
+        "action": "Click",
+        "target": [480,600,30,30],
+        "pre_delay":0,
+        "post_delay":350,
+        "rate_limit":0,
+        "next":["3s"]
+    },
+    "3s": {
+        "action": "Click",
+        "target": [500,380,50,50],
+        "pre_delay":0,
+        "post_delay":350,
+        "rate_limit":0,
+        "next":["startaction"]
+    },
+    "startaction": {
+        "action": "Click",
+        "target": [1150,550,50,50],
+        "pre_delay":0,
+        "post_delay":2000,
+        "rate_limit":0,
+        "next":["turnstart1"]
+    },
+    "turnstart1":{
+        "rate_limit":0,
+        "pre_delay":0,
+        "post_delay":0,
+        "next":["turnstart2"],
+        "interrupt":[
+            "等待加载"
+        ]
+    },
+    "turnstart2":{
+        "recognition": "TemplateMatch",
+        "roi": [
+            1070,
+            490,
+            200,
+            200
+        ],
+        "template": "开始行动.png",
+        "rate_limit":0,
+        "pre_delay":0,
+        "post_delay":1500,
+        "next":["111"],
+        "interrupt":[
+            "等待加载"
+        ]
+    },
+    "swip_skill": {
+        "action": "Swipe",
+        "begin": [1060,490,1,1],
+        "end": [1060,0,1,1],
+        "duration":200,
+        "pre_delay":200,
+        "post_delay":700,
+        "rate_limit":0,
+        "next":[]
+    },
+    "4": {
+        "action": "Click",
+        "target": [500,490,1,1],
+        "pre_delay":0,
+        "post_delay":350,
+        "rate_limit":0,
+        "next":[]
+    },
+    "-1": {
+        "action": "Click",
+        "target": [500,380,1,1],
+        "pre_delay":0,
+        "post_delay":350,
+        "rate_limit":0,
+        "next":[]
+    },
+    "-2": {
+        "action": "Click",
+        "target": [500,250,1,1],
+        "pre_delay":0,
+        "post_delay":350,
+        "rate_limit":0,
+        "next":[]
+    },
+    "-3": {
+        "action": "Click",
+        "target": [500,130,1,1],
+        "pre_delay":0,
+        "post_delay":350,
+        "rate_limit":0,
+        "next":[]
+    },
+    "-4": {
+        "action": "Click",
+        "target": [500,90,1,1],
+        "pre_delay":0,
+        "post_delay":350,
+        "rate_limit":0,
+        "next":[]
+    },
+    "longtip1": {
+        "action": "Swipe",
+        "begin": [888,388,1,1],
+        "end": [888,388,1,1],
+        "duration":700,
+        "pre_delay":200,
+        "post_delay":700,
+        "rate_limit":0
+    },
+    "longtip2": {
+        "action": "Swipe",
+        "begin": [1100,388,1,1],
+        "end": [1100,388,1,1],
+        "duration":700,
+        "pre_delay":200,
+        "post_delay":700,
+        "rate_limit":0
+    }
+}
