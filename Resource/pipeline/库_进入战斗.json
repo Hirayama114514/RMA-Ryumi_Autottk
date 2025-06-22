@@ -28,6 +28,10 @@
         "post_delay":15000
     },
     "作业完成":{
+        "recognition":"TemplateMatch",
+        "template":"周回副本_战斗奖励.png",
+        "threshold": 0.9,
+        "roi":[0,0,400,150],
         "action":"StopTask"
     },
     "异时层切换队伍":{

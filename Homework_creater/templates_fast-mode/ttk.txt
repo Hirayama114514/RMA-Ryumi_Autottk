@@ -50,8 +50,10 @@
         "rate_limit":0,
         "pre_delay":0,
         "post_delay":0,
+        "timeout":8000,
         "next":["@@作业名称@@_t@@行动轮@@_pre-od-no","@@作业名称@@_t@@行动轮@@_pre-od-yes"],
-        "interrupt":["open-od"]
+        "interrupt":["open-od"],
+        "on_error":["@@作业名称@@_逃跑_1"]
     },
     "@@作业名称@@_t@@行动轮@@_pre-od-no":{
         "enable":@@反前置od@@,
@@ -94,7 +96,7 @@
         "threshold":0.9,
         "action": "Click",
         "target": [100,600,30,30],
-        "pre_delay":0,
+        "pre_delay":100,
         "post_delay":0,
         "rate_limit":0,
         "next":["@@作业名称@@_t@@行动轮@@_post-swap_1"]
@@ -125,7 +127,7 @@
         "threshold":0.9,
         "action": "Click",
         "target": [290,600,30,30],
-        "pre_delay":0,
+        "pre_delay":100,
         "post_delay":0,
         "rate_limit":0,
         "next":["@@作业名称@@_t@@行动轮@@_post-swap_2"]
@@ -155,7 +157,7 @@
         "threshold":0.9,
         "action": "Click",
         "target": [480,600,30,30],
-        "pre_delay":0,
+        "pre_delay":100,
         "post_delay":0,
         "rate_limit":0,
         "next":["@@作业名称@@_t@@行动轮@@_post-swap_3"]
@@ -331,8 +333,8 @@
         "action": "Swipe",
         "begin": [1060,480,1,1],
         "end": [1060,0,1,1],
-        "duration":200,
-        "pre_delay":100,
+        "duration":300,
+        "pre_delay":0,
         "post_delay":700,
         "rate_limit":0,
         "next":[
@@ -386,17 +388,23 @@
         "rate_limit":0,
         "next":[
             "@@作业名称@@_t@@行动轮@@_target-skill-yes_1",
-            "@@作业名称@@_t@@行动轮@@_expand-skill_2"
+            "@@作业名称@@_t@@行动轮@@_expand-skill_2",
+            "@@作业名称@@_t@@行动轮@@_expand-skill_3",
+            "@@作业名称@@_t@@行动轮@@_start-action"
         ]
     },
     "@@作业名称@@_t@@行动轮@@_target-skill-yes_1": {
         "enable":@@选目标1@@,
         "action": "Click",
         "target": [@@目标坐标1@@,20,20],
-        "pre_delay":0,
-        "post_delay":800,
+        "pre_delay":200,
+        "post_delay":600,
         "rate_limit":0,
-        "next":["@@作业名称@@_t@@行动轮@@_expand-skill_2"]
+        "next":[
+            "@@作业名称@@_t@@行动轮@@_expand-skill_2",
+            "@@作业名称@@_t@@行动轮@@_expand-skill_3",
+            "@@作业名称@@_t@@行动轮@@_start-action"
+        ]
     },   
     "@@作业名称@@_t@@行动轮@@_expand-skill_2": {
         "enable":@@选技能2@@,
@@ -432,8 +440,8 @@
         "action": "Swipe",
         "begin": [1060,480,1,1],
         "end": [1060,0,1,1],
-        "duration":200,
-        "pre_delay":100,
+        "duration":300,
+        "pre_delay":0,
         "post_delay":700,
         "rate_limit":0,
         "next":[
@@ -487,17 +495,21 @@
         "rate_limit":0,
         "next":[
             "@@作业名称@@_t@@行动轮@@_target-skill-yes_2",
-            "@@作业名称@@_t@@行动轮@@_expand-skill_3"
+            "@@作业名称@@_t@@行动轮@@_expand-skill_3",
+            "@@作业名称@@_t@@行动轮@@_start-action"
         ]
     },
     "@@作业名称@@_t@@行动轮@@_target-skill-yes_2": {
         "enable":@@选目标2@@,
         "action": "Click",
         "target": [@@目标坐标2@@,20,20],
-        "pre_delay":0,
-        "post_delay":800,
+        "pre_delay":200,
+        "post_delay":600,
         "rate_limit":0,
-        "next":["@@作业名称@@_t@@行动轮@@_expand-skill_3"]
+        "next":[
+            "@@作业名称@@_t@@行动轮@@_expand-skill_3",
+            "@@作业名称@@_t@@行动轮@@_start-action"
+            ]
     },
 
     "@@作业名称@@_t@@行动轮@@_expand-skill_3": {
@@ -534,8 +546,8 @@
         "action": "Swipe",
         "begin": [1060,480,1,1],
         "end": [1060,0,1,1],
-        "duration":200,
-        "pre_delay":100,
+        "duration":300,
+        "pre_delay":0,
         "post_delay":700,
         "rate_limit":0,
         "next":[
@@ -596,8 +608,8 @@
         "enable":@@选目标3@@,
         "action": "Click",
         "target": [@@目标坐标3@@,20,20],
-        "pre_delay":0,
-        "post_delay":800,
+        "pre_delay":200,
+        "post_delay":600,
         "rate_limit":0,
         "next":["@@作业名称@@_t@@行动轮@@_start-action"]
     },
